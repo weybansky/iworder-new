@@ -825,15 +825,71 @@ section#hub div.row div.details p.stats i{
 }
 
 /*=====NURSERY PAGE CONTENT=====*/
+section#nursery div.container-fluid{
+	padding: 0px;
+	margin: 0px;
+}
+
+section#nursery div.row{
+	margin: 0px;
+	padding: 0px;
+}
 
 section#nursery h3.title{
 	margin: 0px;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	margin-bottom: 5px;
 	font-size: 18px;
 	/*background-color: #ded;*/
 	background: linear-gradient(to right, #eee, #cfc, #eee);
 }
+
+section#nursery div.row div.post{
+	border-bottom: 1px solid #eee;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+section#nursery div.row div.details{
+	padding-left: 20px;
+	display: inline-block;
+	width: 68.7%;
+	vertical-align: top;
+}
+
+section#nursery div.row div.details h3{
+	margin: 0px;
+	padding-top: 8px;
+	font-size: 18px;
+}
+
+section#nursery div.row div.details p span{
+	font-size: 3px;
+	vertical-align: middle;
+}
+
+section#nursery div.row div.details p a.author{
+	color: #555;
+	font-size: 13px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+section#nursery div.row div.details p a.cat{
+	color: #555;
+	font-size: 13px;
+	display: inline-block;
+}
+
+section#nursery div.row div.image{
+	display: inline-block;
+	width: 30%;
+	height: 60px;
+	overflow: hidden;
+}
+
+
 
 
 
