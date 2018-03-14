@@ -2,6 +2,7 @@
 *	 Author: Abdulwahab Nasir (weybansky)
 *	  Email: weybansky@gmail.acom
 *	 Github: https://github.com/weybansky
+*	Twitter: https://twitter.com/weybansky
 *	Website: https://www.weybanskytech.com.ng
 */
 
@@ -116,7 +117,6 @@ nav.main-nav ul{
 
 nav.main-nav ul li{
 	list-style-type: none;
-	/*float: left;*/
 	display: inline-block;
 	padding: 5px 3px;
 	margin-right: 1px;
@@ -137,6 +137,7 @@ nav.main-nav ul li i{
 section.second-nav{
 	padding: 5px 0px;
 	margin: 0px;
+	border-bottom: 2px inset #ddd;
 }
 
 section.second-nav div.container{
@@ -188,7 +189,7 @@ section.second-nav div.row.text-center{
 }
 
 section.second-nav div.row.text-center div a{
-	color: #333;
+	color: #444;
 	font-size: 14px;
 }
 
@@ -720,6 +721,119 @@ section.article-footer div.tab-content #review-section{
 	text-decoration:none;
 }
 
+
+/*====HUB PAGE CONTENT=====*/
+section#hub div.row{
+	padding: 0px;
+}
+
+section#hub h3.title{
+	margin: 0px;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	/*background-color: #ded;*/
+	background: linear-gradient(to right, #eee, #cfc, #eee);
+}
+
+section#hub div.row div.post{
+	background: #fff;
+}
+
+section#hub div.row div.image{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+section#hub div.row div.image div.date{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 12px;
+	color: #fff;
+	background: #356B44;
+	border-radius: 50%;
+	padding: 10px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+section#hub div.row div.image div.date p{
+	margin: 0px;
+}
+
+section#hub div.row div.image div.category{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	color: #fff;
+	background: #356B44;
+	border-top-right-radius: 5px;
+}
+
+section#hub div.row div.image div.category p{
+	margin: 0px;
+}
+
+section#hub div.row div.image div.category p a{
+	color: #fff;
+	display: block;
+	padding: 5px 7px;
+}
+
+section#hub div.row div.details{
+	padding: 5px 10px;
+}
+
+section#hub div.row div.details p.title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+section#hub div.row div.details p.title a{
+	color: #333;
+}
+
+section#hub div.row div.details p.title small{
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+section#hub div.row div.details p.title small a{
+	font-weight: bold;
+	color: #333;
+}
+
+section#hub div.row div.details p.facilitator-comment{
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	margin-bottom: 2px;
+}
+
+section#hub div.row div.details p.stats{
+	font-size: 12px;
+	color: #555;
+}
+
+section#hub div.row div.details p.stats i{
+	margin-right: 3px;
+}
+
+/*=====NURSERY PAGE CONTENT=====*/
+
+section#nursery h3.title{
+	margin: 0px;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	/*background-color: #ded;*/
+	background: linear-gradient(to right, #eee, #cfc, #eee);
+}
 
 
 
