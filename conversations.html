@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nursery | IWORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- The top Nav Bar -->
+	<nav class="main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-3">
+					<a href="home.html" class="logo">
+						<img src="img/logo.png" alt="iWorder logo">
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<form action="" method="">
+						<input type="text" placeholder="Search">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-3">
+					<ul>
+						<li>
+							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
+						</li>
+						<li>
+							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- The Second Navigation -->
+	<section class="second-nav">
+		<div class="container">
+			<div class="row profile">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<a href="profile.html">
+						<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+						<span>Jane Iworder</span>
+					</a>
+					<a class="create-post" href="create-post.html">
+						<i class="fas fa-pencil-alt"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="home.html">
+						<i class="fas fa-home fa-2x"></i>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="hub.html">
+						<i class="fab fa-hubspot fa-2x"></i>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="nursery.html">
+						<i class="far fa-snowflake fa-2x"></i>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="conversations.html"  class="active">
+						<i class="fas fa-comments fa-2x"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section id="conversations">
+		<div class="container">
+			<div class="row">
+				<h3 class="title">Conversations</h3>
+
+				<!-- display this when the user has no conversation -->
+				<div id="no-conv" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+					<p>You have no conversations.</p>
+					<p><a href="search-user.html" style="color: #356b44;font-weight:bold">Discover</a> new users on this network</p>
+				</div>
+
+
+				<div class="conv col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+					<!-- Apply a class of unread to div.message for unread messages -->
+					<div class="message unread">
+						<a href="message.html">
+							<p class="detail">
+								<span class="name">Jane Iworder</span>
+								<span class="time">Today 11:45am</span>
+							</p>
+							<p class="last-msg">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
+							</p>
+						</a>
+					</div>
+					<div class="message unread">
+						<a href="message.html">
+							<p class="detail">
+								<span class="name">Jane Iworder</span>
+								<span class="time">Today 11:45am</span>
+							</p>
+							<p class="last-msg">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
+							</p>
+						</a>
+					</div>
+
+					<div class="message">
+						<a href="message.html">
+							<p class="detail">
+								<span class="name">Jane Iworder</span>
+								<span class="time">Today 11:45am</span>
+							</p>
+							<p class="last-msg">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
+							</p>
+						</a>
+					</div>
+					<div class="message">
+						<a href="message.html">
+							<p class="detail">
+								<span class="name">Jane Iworder</span>
+								<span class="time">Today 11:45am</span>
+							</p>
+							<p class="last-msg">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
+							</p>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

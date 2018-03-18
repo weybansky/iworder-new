@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile | IWORDER</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- Font Awesome [dot] com -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+	<!-- The top Nav Bar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a href="#menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      	<i class="fas fa-bars"></i>
+	      </a>
+
+	      <a class="navbar-brand" href="#">
+	      	<img src="img/11.png" alt="Main logo">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <form class="navbar-form navbar-left" method="get" action="/search">
+	        <div class="input-group">
+	          <span class="input-group-addon"><i class=" fa fa-search" aria-hidden="true"></i></span>
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button style="display: none;" type="submit" class="btn btn-default">Submit</button>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">			
+					<li>
+						<a href="profile-me.html">
+							<i class="far fa-user"></i>Me
+						</a>
+					</li>
+					<li>
+						<a href="#messages">
+							<i class="far fa-bell"></i>2
+						</a>
+					</li>
+			    <li>
+			    	<a href="#">
+			    		Log out
+			    	</a>
+			    </li>
+				</ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<section id="profile-page">
+		<div class="container">
+			<div class="row">
+				<form action="" method="POST">
+				<div class="col-md-6 col-md-offset-3">
+					
+					<div id="profile" class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<img style="height: 120px;width: 120px;" src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8" style="padding-top: 40px;">
+							<!-- <div class="form-group"> -->
+								<label for="profile-picture">Change profile picture</label>
+								<input style="color: #060;" type="file" name="profile-picture" class="form-control">
+							<!-- </div> -->
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="form-group">
+								<label for="full-name">Name</label>
+								<input type="text" name="full-name" class="form-control" value="Jane Iworder">
+							</div>
+
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" name="username" class="form-control" value="@janyworder">
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" name="email" class="form-control" value="example@example.com">
+							</div>
+
+							<div class="form-group">
+								<label for="short-bio">Short Description</label>
+								<input type="text" name="short-bio" class="form-control" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores inventore omnis nulla, officia ducimus!">
+							</div>
+						</div>
+					</div>
+
+					<div id="profile-other-details" class="row">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="about-me" class="panel-title">About Me</label>
+							</div>
+							<div class="panel-body">
+								<textarea name="about-me" class="form-control" style="width: 100%;" rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sunt officia doloremque expedita, tempore reiciendis quod distinctio fuga, aut magni minus excepturi temporibus iusto quae!</textarea>
+							</div>
+
+							<div class="panel-heading">
+								<label for="rain-makers" class="panel-title">Rain Makers</label>
+								<span class="pull-right"><a href="#facilitators-page"style="color: #31C229;">See all available facilitators</a></span>
+							</div>
+							<div class="panel-body">
+								<div class="checkbox">
+								  <label>
+								    <input type="checkbox" name="" value="">
+								    <a style="color: #31C229;" href="#facilitators">Praise Abiodun</a>
+								  </label>
+								</div>
+								<div class="checkbox">
+								  <label>
+								    <input type="checkbox" name="" value="">
+								    <a style="color: #31C229;" href="#facilitators">Jave Iworder</a>
+								  </label>
+								</div>
+								<div class="checkbox">
+								  <label>
+								    <input type="checkbox" name="" value="">
+								    <a style="color: #31C229;" href="#facilitators">Donald Trump</a>
+								  </label>
+								</div>
+								<div class="checkbox">
+								  <label>
+								    <input type="checkbox" name="" value="">
+								    <a style="color: #31C229;" href="#facilitators">Muhammad Buhari</a>
+								  </label>
+								</div>
+							</div>
+
+							<div class="panel-heading">
+								<label for="sex" class="panel-title">Sex</label>
+							</div>
+							<div class="panel-body">
+								<select name="sex" id="" class="form-control">
+									<option value="">Male</option>
+									<option value="">Female</option>
+									<option value="">Others</option>
+								</select>
+								<p class="help-block">eg. Male, Female, Others</p>
+							</div>
+
+							<div class="panel-heading">
+								<label for="location" class="panel-title">Location</label>
+							</div>
+							<div class="panel-body">
+								<input type="text" name="location" class="form-control" value="Ife, Nigeria">
+								<p class="help-block">eg. Town, Country</p>
+							</div>
+
+							<div class="panel-heading">
+								<label for="genre" class="panel-title">Genre</label>
+							</div>
+							<div class="panel-body">
+								<div class="checkbox-inline">
+								  <input type="checkbox" name="" value=""> Poetry
+								</div>
+								<div class="checkbox-inline">
+								  <input type="checkbox" name="" value=""> Short Story
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Prose
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Fiction
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Speculative/Fantasy
+								</div>
+								<p class="help-block">(eg. Poetry, Short Story, Prose)</p>
+							</div>
+
+							<div class="panel-heading">
+								<label for="interests" class="panel-title">Interested In</label>
+							</div>
+							<div class="panel-body">
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Reading
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Writing
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Critique
+								</div>
+								<div class="checkbox-inline">
+							    <input type="checkbox" name="" value=""> Review
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<button style="color: #fff; border-radius: 30px; border: 2px solid #0c0; background-color: #0c0;" type="submit" class="btn btn-default pull-right">Update Profile</button>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

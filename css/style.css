@@ -137,7 +137,8 @@ nav.main-nav ul li i{
 section.second-nav{
 	padding: 5px 0px;
 	margin: 0px;
-	border-bottom: 2px inset #ddd;
+	box-shadow: 1px 0px 5px;
+	margin-bottom: 5px;
 }
 
 section.second-nav div.container{
@@ -302,32 +303,6 @@ div.article-body{
 	font-family: 'Handlee', cursive;
 }
 
-div.article-property{
-	padding: 15px 5px;
-	margin-top: 5px;
-	margin-bottom: 7px;
-}
-
-div.article-property a{
-	display: inline-block;
-	padding-right: 7px;
-	padding-bottom: 7px;
-}
-div.article-property i{
-	vertical-align: middle;
-	font-size: 18px;
-	margin-right: 2px;
-}
-div.article-property a span{
-	color: #356B44;
-	text-decoration: underline;
-}
-
-div.article-property a span:hover{
-	color: #333333;
-	text-decoration: none;
-}
-
 /*=============Article Footer============*/
 section.article-footer ul.nav-tabs{
 	margin-bottom: 5px;
@@ -348,11 +323,8 @@ section.article-footer ul.nav-tabs li.active a{
 	color: #fff;
 }
 
-
-
-section.article-footer div.tab-content #comment-section div.row,
-section.article-footer div.tab-content #review-section div.row{
-
+section.article-footer .btn-success{
+	background-color: #356B44;
 }
 
 section.article-footer div#commentAndReviews div.row{
@@ -377,10 +349,6 @@ section.article-footer div#commentAndReviews div.row span.username a{
 section.article-footer div#commentAndReviews div.row span.level,
 section.article-footer div#commentAndReviews div.row span.level a{
 	color: #337ab7 !important;
-}
-
-section.article-footer div.tab-content #review-section{
-	/*display: none;*/
 }
 
 
@@ -783,6 +751,8 @@ section#hub div.row div.image div.category p a{
 	color: #fff;
 	display: block;
 	padding: 5px 7px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 section#hub div.row div.details{
@@ -890,8 +860,226 @@ section#nursery div.row div.image{
 }
 
 
+/*===CONVERSATIONS PAGE CONTENT=====*/
+section#conversations div.container{
+	padding: 0px;
+	margin: 0px;
+}
+
+section#conversations div.row{
+	margin: 0px;
+	padding: 0px;
+}
+
+section#conversations div.row h3.title{
+	margin: 0px;
+	padding: 10px 20px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	background: linear-gradient(to right, #eee, #cfc, #eee);
+}
+
+section#conversations div.row div.conv{
+	padding: 0px;
+	margin: 0px;
+}
+
+section#conversations div.row div.message{
+	padding: 5px;
+	border-bottom: 1px solid #777;
+}
+
+section#conversations div.row div.message.unread{
+	background-color: #dfd;
+	/*background-color: #f7d6d6;*/
+	/*background-color: #f2dede;*/
+}
+
+section#conversations div.row div.message a:hover{
+	text-decoration: none;
+}
+
+section#conversations div.row div.message a{
+	text-decoration: none;
+	color: #333;
+}
+
+section#conversations div.row div.message a p.detail{
+	width: 100%;
+	margin: 0px;
+	padding: 0px 3px;
+	font-size: 13px;
+}
+
+section#conversations div.row div.message a p.detail span.name{
+	font-weight: bold;
+}
+
+section#conversations div.row div.message a p.detail span.time{
+	font-style: italic;
+	float: right;
+}
+
+section#conversations div.row div.message a p.last-msg{
+	margin: 0px;
+	padding: 0px 3px;
+	font-size: 12px;
+}
 
 
+
+/*===MESSAGE PAGE CONTENT===*/
+section#message div.container{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+section#message div.row{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+section#message div.msg-top{
+	padding: 3px;
+	box-shadow: 1px 0px 5px;
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+section#message div.msg-top a{
+	text-decoration: none;
+	color: #333;
+}
+
+section#message div.msg-top a:hover{
+	text-decoration: none;
+}
+
+section#message div.msg-top a.back{
+	float: left;
+	z-index: 3;
+	font-size: 18px;
+	border: ;
+}
+
+section#message div.msg-top a.back i{
+	padding: 5px;
+}
+
+section#message div.msg-top a.profile-pic img{
+	display: block;
+	margin: auto;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+section#message div.msg-top a.profile-pic p{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 35px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+section#message div.msg-content{
+	padding: 0px;
+	padding-bottom: 40px;
+}
+
+section#message div.msg-content div#msg-content{
+	padding: 3px;
+	font-size: 12px;
+}
+
+section#message div.msg-content div#msg-content div{
+	margin: 0px;
+	padding: 3px;
+	border-bottom: 1px solid #777;
+}
+
+section#message div.msg-content div#msg-content div.user{
+	text-align: left;
+}
+
+section#message div.msg-content div#msg-content div.you{
+	text-align: right;
+}
+
+section#message div.msg-content div#msg-content div p{
+	margin: 0px;
+	padding: 0px;
+}
+
+section#message div.msg-content div#msg-content div p.name{
+	font-weight: bold;
+}
+
+section#message div.msg-content div#msg-content div p.time{
+	font-style: italic;
+}
+
+section#message div.msg-content div#msg-content div.user p.message{
+	padding-left: 2px;
+	padding-right: 10px;
+}
+
+section#message div.msg-content div#msg-content div.you p.message{
+	padding-right: 2px;
+	padding-left: 10px;
+}
+
+section#message div.msg-box{
+	padding: 0px 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+section#message div.msg-box div{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+section#message div.msg-box form{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+section#message div.msg-box form input{
+	height: 35px;
+	width: 88%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #333;
+	outline: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-right: 0px;
+	margin-right: -2px;
+}
+
+section#message div.msg-box form button{
+	height: 35px;
+	width: 12%;
+	border: 1px solid #333;
+	outline: 0;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-left: 0px;
+	margin-left: -2px;
+	background-color: #356B44;
+}
 
 
 
