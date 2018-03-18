@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search | IWORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- The top Nav Bar -->
+	<nav class="main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-3">
+					<a href="home.html" class="logo">
+						<img src="img/logo.png" alt="iWorder logo">
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<form action="" method="">
+						<input type="text" placeholder="Search">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-3">
+					<ul>
+						<li>
+							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
+						</li>
+						<li>
+							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<section id="search-page">
+		<div class="container">
+			<div class="row search-form">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+					<form class="" method="get" action="">
+		        <div class="input-group">
+		          <input type="text" class="" placeholder="@username or User Name">
+
+		          <button type="submit" class="input-group-addon"><i class=" fa fa-search" aria-hidden="true"></i></button>
+		        </div>
+		      </form>
+				</div>
+			</div>
+
+			<div class="row search-user-content">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+					<h3 id="title">Search results for @username / User Name</h3>
+
+					<div class="row contents">
+						<div class="col-md-2 col-sm-3 col-xs-3">
+							<a href="profile.html">
+								<img src="img/portrait1.jpg" alt="Profile Picture" class="img-responsive img-circle">
+							</a>
+						</div>
+						<div style="padding-top: 5px;" class="col-md-7 col-sm-6 col-xs-6">
+							<p id="name">
+								<a href="profile.html">User Name</a>
+							</p>
+							<p id="username">
+								<a href="profile.html">@username</a>
+
+								<span id="user-details">
+									234 Following
+									&nbsp;
+									200 Posts
+									&nbsp;
+									150 Followers
+								</span>
+							</p>
+							<p id="short-bio">This is a short bio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, minus.</p>
+						</div>
+						<div style="padding-top: 5px;" class="col-md-3 col-sm-3 col-xs-3">
+							<a id="follow" href="#" role="button" class="btn btn-default">Follow</a>
+							<br>
+							<a id="profile-btn" href="profile.html" role="button" class="btn btn-default">View Profile</a>
+						</div>
+					</div>
+					
+				</div>
+
+				<!-- Incase there are ads on this page or featured posts-->
+				<!-- <div class="col-md-* col-sm-* col-xs-*">
+					Featured posts / Advertisements
+				</div> -->
+			</div>
+		</div><!-- End of container -->
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

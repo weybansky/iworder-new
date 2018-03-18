@@ -224,14 +224,12 @@ section#home-page-content div.tab-content div.panel div.panel-body{
 section#home-page-content div.tab-content div.panel div.panel-body{
 	box-shadow: 1px 1px 6px #aaa, -1px 1px 6px #aaa;
 	margin-bottom: 18px;
-	/**/
 }
 
 
 /*======Article PAGE CONTENT=======*/
-
 section#article{
-	margin-top: 30px;
+	margin-top: 12px;
 }
 
 div.article-head div.article-head-img img{
@@ -1082,25 +1080,226 @@ section#message div.msg-box form button{
 }
 
 
+/*===CREATE ARTICLE PAGE===*/
+section#create-post div.row div{
+	padding: 0px;
+}
+
+section#create-post h3.h3{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+	padding: 10px 15px;
+	font-size: 18px;
+	background: linear-gradient(to right, #eee, #cfc, #eee);
+}
+
+section#create-post form.create-post{
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+section#create-post form.create-post input:focus,
+section#create-post form.create-post textarea:focus{
+	border-color: #356B44;
+}
+
+section#create-post form.create-post label,
+section#create-post form.create-post p.help-block{
+	padding-left: 5px;
+}
+
+section#create-post form.create-post input.form-control{
+	padding: 7px 15px;
+	border-radius: 30px;
+}
+
+section#create-post form.create-post textarea{
+	padding: 7px 15px;
+	border-radius: 15px;
+}
+
+section#create-post form.create-post button.btn{
+	padding: 7px 20px;
+	border-radius: 30px;
+	border: 1px solid #356B44;
+	/*background-color: #fff;*/
+	background-color: #356B44;
+	color: #fff;
+}
 
 
+/*===Category/Tag Page Content*/
+section#search-page{
+	margin: 0px;
+	padding: 12px 0px;
+}
 
-@media (max-width: 991px) {
-	/*======Article PAGE CONTENT=======*/
-	section#article div.article-head div.article-head-img img{
-		width: 100%;
-	}
+section#search-page div.search-form input{
+	border: 0px;
+	padding: 3px;
+	padding-left: 15px;
+	min-width: 93%;
+}
+
+section#search-page div.search-form button{
+	background-color: #fff;
+	border: 0px;
+	padding: 3px;
+	padding-right: 20px;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #31C229;
+	float: right;
+	min-height: 25px;
+	min-width: 5%;
+}
+
+section#search-page div.search-form div.input-group{
+	border: 2px solid #555;
+	border-radius: 30px;
+	padding: 10px;
+	display: block;
+}
+
+
+section#search-page div.search-user-content h3#title,
+section#search-page div.search-post-content h3#title{
+		margin-bottom: 20px;
+}
+
+/*===== Styling for Users Search =====*/
+section#search-page div.search-user-content div.contents > div{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+section#search-page div.search-user-content img{
+	height: 100px;
+	width: 100px;
+	/*float: right;*/
+}
+
+section#search-page div.search-user-content p{
+	margin-bottom: 5px;
+}
+
+section#search-page div.search-user-content p a{
+	color: #31C229;
+}
+
+section#search-page div.search-user-content p a:hover{
+	color: #333;
+}
+
+section#search-page div.search-user-content p#name{
+	font-size: 18px;
+}
+
+section#search-page div.search-user-content a.btn{
+	border: 1px solid #31C229;
+	color: #333;
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 7px 10px;
+	margin: 5px;
+	min-width: 100px;
+}
+
+section#search-page div.search-user-content a.btn:hover{
+	background-color: #31C229;
+	color: #fff;
+}
+
+section#search-page div.search-user-content span#user-details{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	padding-left: 5px;
 }
 
 
 
 
+/*====== Styling for Posts Search ======*/
+section#search-page div.search-post-content div.contents > div{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+section#search-page div.search-post-content div.well{
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+section#search-page div.search-post-content div.well a#post-img{
+	overflow-y: hidden !important;
+	height: 300px;
+	display: block;
+}
+
+section#search-page div.search-post-content div.well img{
+	min-height: 200px;
+	width: 100%;
+}
+
+section#search-page div.search-post-content div.post p a{
+	color: #090;
+}
+section#search-page div.search-post-content div.post p a:hover{
+	text-decoration: none;
+}
+
+section#search-page div.search-post-content div.post p#post-title{
+	font-size: 18px;
+	padding-top: 5px;
+	margin-bottom: 1px;
+}
+
+section#search-page div.search-post-content div.post p#post-title:hover{
+	text-decoration: underline;
+}
+
+section#search-page div.search-post-content div.post p#post-details a{
+	color: #555;
+}
+section#search-page div.search-post-content div.post p#post-details a:hover{
+	color: #090;
+}
+
+
+/* Category / Tag Styling*/
+section#search-page div.category-tag h3#title{
+	font-weight: bold;
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 0.2em;
+	font-family: 'Patrick Hand', cursive;
+	background-color: #31C229;
+	padding: 20px 10px;
+}
+section#search-page div.category-tag p#post-title{
+	font-size: 24px !important;
+}
+section#search-page div.category-tag p#post-details{
+	font-size: 14px !important;
+}
+section#search-page div.category-tag div.well{
+	padding-right: 10px;
+	padding-left: 10px;
+}
 
 
 
 
-
-
+@media (max-width: 991px) {
+	/*===Category/Tag Page Content===*/
+	section#search-page div.search-user-content span#user-details{
+		display: block;
+		padding-top: 5px;
+	}
+	section#search-page div.category-tag h3#title{
+		font-size: 30px;
+	}
+}
 
 
 @media (max-width: 768px) {
@@ -1120,12 +1319,6 @@ section#message div.msg-box form button{
 		box-shadow: none;
 		border-bottom: 1px solid #aaa;
 	}
-
-	/*======Article PAGE CONTENT=======*/
-	section#article{
-		margin-top: 10px;
-	}
-
 
 	/*=====Profile Page Content=====*/
 	#profile-page #profile #profile-details h3{
@@ -1156,5 +1349,74 @@ section#message div.msg-box form button{
 	}
 	#profile-page div.followers .panel-body a.btn{
 		padding: 5px 10px;
+	}
+
+	/*===Category/Tag Page Content===*/
+	section#search-page div.search-form input{
+		min-width: 88%;
+	}
+	section#search-page div.search-form button{
+		min-width: 4%;
+	}
+
+	section#search-page div.search-user-content h3#title,
+	section#search-page div.search-post-content h3#title{
+		font-size: 26px;
+	}
+
+	section#search-page div.search-user-content div.row > div{
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-top: 0px !important;
+	}
+
+	section#search-page div.search-user-content img{
+		height: 70px;
+		width: 70px;
+	}
+
+	section#search-page div.search-user-content a#follow,
+	section#search-page div.search-user-content a#following{
+		padding: 5px 3px;
+		min-width: 70px;
+		margin: 1px;
+	}
+
+	section#search-page div.search-user-content a#profile-btn{
+		display: none;
+	}
+
+	section#search-page div.search-user-content p#name,
+	section#search-page div.search-user-content p#username{
+		padding-top: 1px;
+	}
+	section#search-page div.search-user-content p#name{
+		font-size: 16px;
+		line-height: 12px;
+	}
+	section#search-page div.search-user-content span#user-details{
+		font-size: 12px;
+		padding-top: 2px;
+		padding-left: 0px;
+	}
+	section#search-page div.search-user-content p#short-bio{
+		display: none;
+	}
+
+
+	/* Style for Post Search*/
+	section#search-page div.search-post-content div.post p#post-title{
+		font-size: 17px;
+	}
+	section#search-page div.search-post-content div.post p#post-details{
+		font-size: 13px;
+	}
+
+
+	/* Styling for Category / Tag Page*/
+	section#search-page div.search-user-content h3#title,
+	section#search-page div.search-post-content h3#title{
+		margin-bottom: 10px;
+		margin-top: 10px;
 	}
 }
