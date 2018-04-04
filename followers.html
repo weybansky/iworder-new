@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Followers | IWORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- Font Awesome [dot] com -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+	<!-- The top Nav Bar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a href="#menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      	<i class="fas fa-bars"></i>
+	      </a>
+
+	      <a class="navbar-brand" href="#">
+	      	<img src="img/11.png" alt="Main logo">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <form class="navbar-form navbar-left" method="get" action="/search">
+	        <div class="input-group">
+	          <span class="input-group-addon"><i class=" fa fa-search" aria-hidden="true"></i></span>
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button style="display: none;" type="submit" class="btn btn-default">Submit</button>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">			
+					<li>
+						<a href="profile-me.html">
+							<i class="far fa-user"></i>Me
+						</a>
+					</li>
+					<li>
+						<a href="#messages">
+							<i class="far fa-bell"></i>2
+						</a>
+					</li>
+			    <li>
+			    	<a href="#">
+			    		Log out
+			    	</a>
+			    </li>
+				</ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<section id="profile-page">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+					
+					<div id="profile" class="row">
+						<div class="col-md-5 col-sm-4 col-xs-6">
+							<img id="profile-picture" src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+						</div>
+						<div id="profile-details" class="col-md-7 col-sm-8 col-xs-6">
+							<h3>Jane Iworder</h3>
+							<p id="profile-username">
+								<i class="fa fa-at" aria-hidden="true"></i>janyworder
+							</p>
+							<!-- When active -->
+							<p id="profile-active">
+								<i class="fa fa-circle" style="color:#00cc00;" aria-hidden="true"></i>active now
+							</p>
+							<!-- when not active you can use this -->
+							<!-- <p><i class="fa fa-circle" style="color:#555555;" aria-hidden="true"></i>32 mins ago</p> -->
+							<p>
+								<!-- the owner of the profile can't follow himself -->
+								<a id="follow" href="#follow" class="btn btn-default" role="button">
+									Follow
+								</a>
+								<!-- <a id="following" href="#follow" class="btn btn-default" role="button">
+									Following
+								</a> -->
+							</p>
+						</div>
+						<div id="profile-short-bio" class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
+							<p class="text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis fugit totam dolorem corrupti, exercitationem
+							</p>
+						</div>
+					</div>
+
+					<div id="profile-stats" class="row text-center">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<a href="following.html">
+								<h5>Following</h5>
+								<p>568</p>
+							</a>
+						</div>
+						<div id="profile-stats-middle" class="col-md-4 col-sm-4 col-xs-4">
+							<a href="#user-posts">
+								<h5>Posts</h5>
+								<p>120</p>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<a href="followers.html">
+								<h5>Followers</h5>
+								<p>2422</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="row followers">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Followers</h3>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait3.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												Donald Trump
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a>
+										<!-- <a href="#follow" role="button" id="following" class="btn btn-default">
+											Unfollow
+										</a> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												John Iworder
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<!-- <a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a> -->
+										<a href="#follow" role="button" id="following" class="btn btn-default">
+											Following
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait3.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												Praise Abiodun
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a>
+										<!-- <a href="#follow" role="button" id="following" class="btn btn-default">
+											Unfollow
+										</a> -->
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												John Iworder
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<!-- <a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a> -->
+										<a href="#follow" role="button" id="following" class="btn btn-default">
+											Following
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait3.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												Praise Abiodun
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a>
+										<!-- <a href="#follow" role="button" id="following" class="btn btn-default">
+											Unfollow
+										</a> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												John Iworder
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<!-- <a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a> -->
+										<a href="#follow" role="button" id="following" class="btn btn-default">
+											Following
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2 col-sm-2 col-xs-2">
+										<a href="">
+											<img src="img/portrait3.jpg" class="img-responsive img-circle" alt="Profile Picture">
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-6">
+										<h5>
+											<a href="">
+												Praise Abiodun
+											</a>
+										</h5>
+										<p>This is a short bio</p>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-4">
+										<a href="#follow" role="button" id="follow" class="btn btn-default">
+											Follow
+										</a>
+										<!-- <a href="#follow" role="button" id="following" class="btn btn-default">
+											Unfollow
+										</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- End of Column -->
+
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

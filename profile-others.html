@@ -6,139 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile | IWORDER</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<!-- Font Awesome [dot] com -->
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
-	<link rel="stylesheet" type="text/css" href="css/profile.css">
-
-
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<!-- The top Nav Bar -->
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a href="#menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	      	<i class="fas fa-bars"></i>
-	      </a>
 
-	      <a class="navbar-brand" href="home.html">
-	      	<img src="img/logo.png" alt="iWorder logo">
-	      </a>
-	    </div>
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <form class="navbar-form navbar-left" method="get" action="/search">
-	        <div class="input-group">
-	          <span class="input-group-addon"><i class="fas fa-search" aria-hidden="true"></i></span>
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button style="display: none;" type="submit" class="btn btn-default">Submit</button>
-	      </form>
-
-	      <ul class="nav navbar-nav navbar-right">			
-					<li>
-						<a href="profile-me.html">
-							<i class="far fa-user"></i>Me
-						</a>
-					</li>
-					<li>
-						<a href="#messages">
-							<i class="far fa-bell"></i>2
-						</a>
-					</li>
-			    <li>
-			    	<a href="#">
-			    		Log out
-			    	</a>
-			    </li>
-				</ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-
-	<section id="profile-page">
+	<section id="profilePage">
 		<div class="container">
 			<div class="row">
-
-				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+				<div class="divrow col-xs-12 col-xs-offset-0">
 					
-					<div id="profile" class="row">
-						<div class="col-md-5 col-sm-4 col-xs-6">
-							<img id="profile-picture" src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
-						</div>
-						<div id="profile-details" class="col-md-7 col-sm-8 col-xs-6">
-							<h3>Jane Iworder</h3>
-							<p id="profile-username">
-								<i class="fa fa-at" aria-hidden="true"></i>janyworder
-							</p>
-							<!-- When active -->
-							<p id="profile-active">
-								<i class="fa fa-circle" style="color:#00cc00;" aria-hidden="true"></i>active now
-							</p>
-							<!-- when not active you can use this -->
-							<!-- <p><i class="fa fa-circle" style="color:#555555;" aria-hidden="true"></i>32 mins ago</p> -->
-							<p>
-								<a id="follow" href="#follow" class="btn btn-default" role="button">
-									Follow
-								</a>
-								<!-- <a id="following" href="#follow" class="btn btn-default" role="button">
-									Following
-								</a> -->
-							</p>
-						</div>
-						<div id="profile-short-bio" class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
-							<p class="text-center">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis fugit totam dolorem corrupti, exercitationem
-							</p>
-						</div>
+					<div class="top"">
+						<p style="float: left;margin: 0px;">
+							<a href="home.html">
+								<i class="fas fa-home"></i>
+							</a>
+						</p>
+						<p class="page">
+							PROFILE
+						</p>
+						<p style="float: right;margin: 0px;">
+							<a href="search-user.html">
+								<i class="fas fa-search"></i>
+							</a>
+						</p>
 					</div>
 
-					<div id="profile-stats" class="row text-center">
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<a href="following.html">
-								<h5>Following</h5>
-								<p>568</p>
-							</a>
-						</div>
-						<div id="profile-stats-middle" class="col-md-4 col-sm-4 col-xs-4">
-							<a href="#user-posts">
-								<h5>Posts</h5>
-								<p>120</p>
-							</a>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<a href="followers.html">
-								<h5>Followers</h5>
-								<p>2422</p>
-							</a>
-						</div>
+					<div class="img">
+						<img src="img/portrait1.jpg" alt="Profile Picture">
 					</div>
 
-					<div id="profile-page-links" class="row">
-						<div id="links" class="col-md-12 col-sm-12 col-xs-12">
-							<a href="#send-message.html">
-								<!-- <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> -->
-								<i class="far fa-envelope fa-2x"></i>
-								<br />Message
-							</a>
-							<a href="#activity-others.html">
-								<!-- <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i> -->
-								<i class="far fa-bell fa-2x"></i>
-								<br />Activity
+
+					<div class="user_profile">
+						<div class="icon">
+							<a href="conversations.html">
+								<i class="fa fa-envelope"></i>
 							</a>
 						</div>
+
+						<div class="user">
+							<p class="name">
+								Sophie Scneider
+							</p>
+
+							<p class="level">
+								<span>
+									<i class="fas fa-tint"></i>
+									Green
+								</span>
+								<span class="username">
+									<i class="fas fa-at" style="color: #777;"></i>
+									sophie001
+								</span>
+							</p>
+
+							<p class="short-bio">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim commodi, ex reprehenderit libero perspiciatis laboriosam!
+							</p>
+						</div>
+
+						<p class="stats">
+							<span>
+								<span class="text">LIKES</span>
+								<br>
+								<span class="value">452</span>
+							</span>
+
+							<span>
+								<span class="text">FOLLOWERS</span>
+								<br>
+								<span class="value">320</span>
+							</span>
+
+							<span>
+								<span class="text">POSTS</span>
+								<br>
+								<span class="value">94</span>
+							</span>
+						</p>
 					</div>
 
-					<div id="profile-other-details" class="row">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">About Me</h3>
+					<div class="follow">
+						<a href="#edit_profile_btn" id="edit_profile_btn" class="follow">
+							<i class="fas fa-plus" style="margin-right: 10px;"></i> FOLLOW
+						</a>
+						
+						<!-- this is used when user is following -->
+						<!-- <a href="#edit_profile_btn" id="edit_profile_btn" class="following">
+							<i class="fas fa-check" style="margin-right: 10px;"></i> FOLLOWING
+						</a> -->
+					</div>
+					
+
+
+					<!-- Important section Edit your profile or not -->
+					<div id="no_edit" class="about">
+						<!--  -->
+						<div class="panel-heading">
+								<h3 class="panel-title">About</h3>
 							</div>
 							<div class="panel-body">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, corporis iusto asperiores ducimus, nostrum non minima et earum pariatur autem saepe dolores officiis corrupti qui accusantium aspernatur, quod dignissimos repellendus quam vel eligendi! Minus, quibusdam error ducimus natus facilis accusamus quas quo dolores magnam! Autem non dicta quis nesciunt cupiditate.
+
+								<!-- This is displayed when the user doesn't have a descirption -->
+								<p class="no-detail">
+									....
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -146,6 +119,11 @@
 							</div>
 							<div class="panel-body">
 								Praise Abiodun, Donald Trump
+
+								<!-- This is displayed when the user has no Rainmakers -->
+								<p class="no-detail">
+									No RainMaker yet
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -153,6 +131,11 @@
 							</div>
 							<div class="panel-body">
 								Male
+
+								<!-- This is displayed when the user didn't specify sex -->
+								<p class="no-detail">
+									Not Specified
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -160,6 +143,11 @@
 							</div>
 							<div class="panel-body">
 								Ife, Nigeria
+
+								<!-- This is displayed when the user didn't specify their location -->
+								<p class="no-detail">
+									Not Specified
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -167,6 +155,11 @@
 							</div>
 							<div class="panel-body">
 								Poetry, Short Story, Prose, Fiction, Speculative/Fantasy
+
+								<!-- This is displayed when the user has no Genre -->
+								<p class="no-detail">
+									No Genre
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -176,14 +169,16 @@
 								Reading Only,
 								Reading and Writing,
 								Critique / Review
+
+								<!-- This is displayed when the user didn't specify thier interest -->
+								<p class="no-detail">
+									No Interests yet
+								</p><!-- end of display -->
 							</div>
 
-
-						</div>
 					</div>
 
-				</div><!-- End of Column -->
-
+				</div><!-- End of Divrow -->
 			</div><!-- End of row -->
 		</div><!-- End of container -->
 	</section>
@@ -191,5 +186,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nursery | IWORDER</title>
+	<title>Conversation | IWORDER</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,26 +14,32 @@
 	<nav class="main-nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
 					<a href="home.html" class="logo">
-						<img src="img/logo.png" alt="iWorder logo">
+						<img src="img/logob.jpg" alt="iWorder logo">
 					</a>
 				</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="nav-form col-md-4 col-sm-5 col-xs-6">
 					<form action="" method="">
 						<input type="text" placeholder="Search">
 						<button type="submit"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="nav-links col-md-4 col-sm-4 col-xs-5">
 					<ul>
 						<li>
-							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
+							<a href="profile.html">
+								<img src="svg/coins.svg" alt="Points">
+								304
+							</a>
 						</li>
 						<li>
-							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
+							<a href="notification.html">
+								<img src="svg/bell.svg" alt="Notifications">
+								<span class="badge">200</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -58,8 +64,8 @@
 
 			<div class="row text-center">
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="home.html">
-						<i class="fas fa-home fa-2x"></i>
+					<a href="home.html" class="active">
+						<img src="svg/home.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
@@ -69,27 +75,26 @@
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
 					<a href="nursery.html">
-						<i class="far fa-snowflake fa-2x"></i>
+						<img src="svg/nursery.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="conversations.html"  class="active">
-						<i class="fas fa-comments fa-2x"></i>
+					<a href="conversations.html">
+						<img src="svg/envelope-active.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-		<section id="conversations">
+	<section id="conversations">
 		<div class="container">
 			<div class="row">
-				<h3 class="title">Conversations</h3>
 
 				<!-- display this when the user has no conversation -->
 				<div id="no-conv" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
 					<p>You have no conversations.</p>
-					<p><a href="search-user.html" style="color: #356b44;font-weight:bold">Discover</a> new users on this network</p>
+					<p style="margin-bottom: 2px;"><a href="search-user.html" style="color: #356b44;font-weight:bold;">Discover</a> new users on this network</p>
 				</div>
 
 

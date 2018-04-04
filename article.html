@@ -11,77 +11,109 @@
 
 	<!-- TinyMCE -->
 	<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
-	<script>tinymce.init({ selector:'textarea' });</script>
+	<script>
+		tinymce.init({
+			selector:'textarea',
+			branding: false,
+			// plugins: "wordcount",
+			statusbar: false,
+			toolbar: 'bold italic',
+			menubar: false
+		});
+	</script>
 </head>
 <body>
-	<!-- The top Nav Bar -->
-	<nav class="main-nav">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-3">
-					<a href="home.html" class="logo">
-						<img src="img/logo.png" alt="iWorder logo">
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<form action="" method="">
-						<input type="text" placeholder="Search">
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-3">
-					<ul>
-						<li>
-							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
-						</li>
-						<li>
-							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
 
 	<!-- The Article Section -->
 	<section id="article">
-		<div class="container">
+		<!-- Article Fixed Top Nav -->
+		<div class="container article-nav">
 			<div class="row">
-				<div class="col-md-8 col-sm-9 col-xs-12 col-xs-offset-0">
+				<div class="col-xs-12 col-xs-offset-0">
+					<a href="hub.html" class="hub-ico">
+						<i class="fab fa-hubspot"></i>
+					</a>
+					<!-- This only appears if the user is a facilitator -->
+					<!-- The icon turn solid when it is recommended by changing "far" to "fas" -->
+					<a href="recommendation-page.html" class="recommended-ico">
+						<i class="far fa-thumbs-up"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container article-content">
+			<div class="row">
+				<div class="art col-md-8 col-sm-9 col-xs-12 col-xs-offset-0">
 					<!-- Article Head -->
 					<div class="article-head">
-						<div class="article-head-img">
-							<img class="img-responsive img-rounded" src="img/article-img.jpg" alt="Article Image">
-						</div>
-						<h3>A Door Ajar</h3>
-						<div class="article-head-body">
-							<p>
-								<span>by</span>
-								<a class="author" href="#">Bluegirl</a>
-								<i class="fas fa-circle"></i>
 
-								<!-- use id of following of user is following the author -->
-								<!-- use id of follow of user is not following the author -->
-								<a id="follow" href="#follow" class="btn btn-default">Follow</a>
+						<div class="article-head-img">
+							<img class="img-responsive" src="img/article-img.jpg" alt="Article Image">
+
+							<div class="cat">
+								<a href="category-tag.html">Poetry</a>
+							</div>
+						</div>
+
+						<div class="article-head-title">
+							<p class="title">
+								A Door Ajar
 							</p>
-							<p>
-								<span>Nov 12, 2017 </span>
-								<i class="fas fa-circle"></i>
-								<span>Poetry</span>
-								<i class="fas fa-circle"></i>
-								<span>Romance</span>
-								<i class="fas fa-circle"></i>
-								<span>4 comments (2 reviews)</span>
+							<p class="stats">
+								<span>
+									<i class="far fa-clock"></i>6 minutes ago
+								</span>
+								<span class="seperate">
+									<i class="fas fa-circle"></i>
+								</span>
+								<span>
+									<i class="fas fa-comments"></i>39 comments
+								</span>
 							</p>
 						</div>
+
+						<div class="article-head-author">
+							<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+							<p class="author">
+								<span class="name">
+									<a href="profile.html">Jane Iworder</a>
+								</span>
+								<br>
+								<span class="level">
+									GreenHorn
+								</span>
+							</p>
+							<p class="author-action">
+								<span class="follow">
+									<a href="#follow">
+										<i class="fas fa-plus"></i>Follow
+									</a>
+								</span>
+
+								<!-- This following should be used when following -->
+								<!-- <span class="following">
+									<a href="#unfollow">
+										<i class="fas fa-check"></i>Following
+									</a>
+								</span> -->
+							</p>
+						</div>
+
 					</div><!-- End of the Article Head -->
 
 					<!-- Article Body -->
-					<div class="article-body">
+					<div class="article-body" style="padding: 12px 8px;">
 						<!-- Article Content -->
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, veritatis aut saepe provident tempora ex quidem. Accusantium quasi debitis natus, quae ipsum nihil eaque consequuntur qui nostrum assumenda consectetur obcaecati voluptatum fugit vel dolorem quam magnam veniam deleniti! Error vel quos dolor, eos veritatis cum natus mollitia corporis. Ratione odit facere rerum mollitia maxime magni illum sint tenetur. Excepturi earum, ullam non! Hic odit totam dignissimos quaerat voluptates et, sed officiis explicabo aspernatur. Quae dolorem expedita, fuga, alias officia sunt asperiores! Error labore, magnam atque consequuntur dolorum asperiores quidem quo deserunt optio tempora iusto ducimus facere distinctio rerum aut explicabo. Hic est amet laboriosam, omnis maxime dolorum assumenda, necessitatibus dolor. Atque ex provident accusantium earum nesciunt ipsa nulla totam exercitationem laudantium quasi nisi eius molestias adipisci, excepturi expedita quidem maxime laboriosam blanditiis velit corporis mollitia ipsam reiciendis eaque asperiores. Maxime dolorem quam debitis omnis, a possimus assumenda? Sapiente facere veniam magnam quia saepe omnis maiores, deleniti officia, sit nam veritatis explicabo, maxime ex molestias dolorum distinctio! Suscipit delectus eligendi quam dolor magni nulla eius quia distinctio atque temporibus praesentium neque facilis sunt reiciendis eveniet accusantium dolore ratione repellendus rem labore commodi officiis, tempore. Modi numquam beatae aliquid quae eaque incidunt assumenda cum ipsum, blanditiis ab repellendus suscipit, earum quas, ut veniam consectetur labore! Esse quia excepturi est consectetur doloribus, dicta similique fugit, voluptatum deserunt inventore commodi nulla ad quidem possimus ullam obcaecati iure sint ratione nihil dolor temporibus magni expedita accusantium. Velit fugit minima, obcaecati soluta cum, maxime itaque mollitia architecto ipsum cupiditate voluptate, labore blanditiis dolore! Repellat inventore quam dicta! Adipisci optio sed sequi quis, voluptates reprehenderit dolorem, eligendi sint tempora unde, vero beatae assumenda maiores minus! At sapiente nisi sunt aut assumenda et suscipit accusamus veritatis iure, minus illum, error, ducimus ab eius expedita quisquam, quam quod sed iusto adipisci! Tenetur eveniet iste nesciunt, optio dolor animi voluptatum obcaecati nobis repellat amet ut ipsam laborum, sunt quos voluptatem sint voluptate explicabo facere atque adipisci labore rerum aliquid commodi. Cupiditate hic obcaecati dolor culpa asperiores aliquam molestias totam est, praesentium in veritatis, ullam quasi saepe exercitationem molestiae, consequatur soluta doloremque sequi mollitia placeat laboriosam, quod voluptatum ut incidunt! Commodi vitae, cupiditate eius, ab minima ex debitis recusandae asperiores eligendi soluta quo eos voluptatem ipsa illo aliquid? Nostrum similique deserunt corporis exercitationem dolor! Ratione soluta eaque repellendus! Quae sunt, rem deleniti neque quas est, fuga suscipit, sequi velit doloribus assumenda totam dignissimos tenetur! Vero modi, voluptates repellat cumque deleniti, deserunt illo. Quia enim laudantium ratione temporibus, commodi nulla tempore illum accusamus dolore beatae. Voluptatum natus, nemo dignissimos aspernatur dolorum vel accusantium vero voluptates pariatur reprehenderit iste explicabo molestiae facere enim cupiditate quisquam magnam, maiores reiciendis nisi veniam. Harum nostrum doloremque sint culpa mollitia placeat natus ex necessitatibus minus? Dolorum officia corrupti at, quo molestias et repellendus necessitatibus vel ducimus consectetur dolore officiis obcaecati aspernatur sequi ad quae architecto quasi soluta iusto non quisquam culpa. Illum numquam dignissimos eius, harum dolorum dolor expedita deserunt, vero illo cupiditate laudantium exercitationem ab corrupti.	
+
+						<div class="tag" style="color: #666;font-size: 14px;padding: 20px 3px;">
+							<i class="fas fa-tag" style="margin-right: 5px;"></i>
+							<span>
+								poetry, comedy, fiction
+							</span>
+						</div>
 					</div><!-- End of the Article Body -->
 					
 					<!-- Article Footer => Comments and Reviews -->
@@ -109,7 +141,7 @@
 											<div class="col-md-12 col-sm-12 col-xs-12">
 												<form action="" method="" style="padding-top: 5px;">
 													<div class="form-group">
-														<textarea name="comment" id="" rows="4" class="form-control"></textarea>
+														<textarea name="comment" id="place_comment" rows="4" class="form-control"></textarea>
 													</div>
 													<div class="">
 														<button type="submit" class="btn btn-success pull-right">Make Comment</button>
@@ -124,7 +156,7 @@
 											<div class="col-md-12 col-sm-12 col-xs-12">
 												<form action="" method="" style="padding-top: 5px;">
 													<div class="form-group">
-														<textarea name="comment" id="" rows="4" class="form-control"></textarea>
+														<textarea name="comment" id="place_review" rows="4" class="form-control"></textarea>
 													</div>
 													<div class="">
 														<button type="submit" class="btn btn-success pull-right">Submit Review</button>
@@ -139,130 +171,66 @@
 
 						<!-- List of all Comments and Reviews -->
 						<div id="commentAndReviews">
-							<!-- Make sure to put an id="review for each review" -->
-							<div id="comment" class="row">
-								<div class="col-md-1 col-sm-1 col-xs-2">
-									<a href="">
-										<img style="width: 50px; height: 50px; margin-right: 10px;" class=" img-circle" src="img/article-img.jpg" alt="Comment Author">
-									</a>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-10">
-									<p>
-										Barbage
-										(<span class="username"><a href="#profile">@gentle</a></span>) 
-										said:
-										<br>
-										<span id="" class="level">Greenhorn</span>
-										<br>
-										<span id="">4 reviews</span>
-										<br>
-										<span id="">13.11.2017 15:03</span>
-									</p>
-								</div>
-								<div class="col-md-8 col-sm-8 col-xs-12">
-									<p style="padding-top: 5px;">
-										Comments Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore assumenda nesciunt, mollitia iste, deserunt eos modi quibusdam praesentium atque aspernatur repudiandae repellat obcaecati officia nihil quam.
-									</p>
+						
+							<!-- This is displayed when there are no comments/reviews on the post -->
+							<div class="comment review" style="border-top: 1px solid #ccc;">
+								<div class="" style="font-size: 14px;padding: 5px 10px;">
+									No comments/ reviews yet.
+									<br>
+									Be the first to <a href="#commentAndReviews" style="color: #356B44;">review</a> this
 								</div>
 							</div>
-							<div id="review" class="row">
-								<div class="col-md-1 col-sm-1 col-xs-2">
-									<a href="">
-										<img style="width: 50px; height: 50px;" class=" img-circle" src="img/logo.jpg" alt="Review Author">
-									</a>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-10">
-									<p>
-										Sibongie
-										(<span class="username"><a href="">@sibongie</a></span>) 
-										wrote a review:
+
+
+
+
+
+							<div class="comment">
+								<div class="comment-author">
+									<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+									<p class="author">
+										<span class="name">
+											<a href="profile.html">Jane Iworder</a>
+											(@janyworder) said:
+										</span>
 										<br>
-										<span id="" class="level">Rainmaker</span>
-										<br>
-										<span id="">5 reviews</span>
-										<br>
-										<span id="">13.11.2017 15:03</span>
+										<span class="level">
+											GreenHorn
+											<i class="fas fa-circle"></i>
+											4 reviews
+										</span>
 									</p>
 								</div>
-								<div class="col-md-8 col-sm-8 col-xs-12">
-									<p style="padding-top: 5px;">
-										Reviews Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore eligendi iste quae autem at impedit animi odit adipisci praesentium voluptate, aspernatur accusamus qui, ab quos fugiat assumenda reiciendis reprehenderit?
-									</p>
+								<div class="comment-detail">
+									comment text Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nesciunt impedit voluptas, nulla minus vitae.
+								</div>
+								<div class="comment-stats">
+									<i class="far fa-clock"></i> 6 minutes ago
 								</div>
 							</div>
-							<div id="comment" class="row">
-								<div class="col-md-1 col-sm-1 col-xs-2">
-									<a href="">
-										<img style="width: 50px; height: 50px;" class=" img-circle" src="img/portrait1.jpg" alt="Comment Author">
-									</a>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-10">
-									<p>
-										Jane Iworder
-										(<span class="username"><a href="#profile">@janyworder</a></span>) 
-										said:
+							
+
+							<div class="comment review">
+								<div class="comment-author">
+									<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+									<p class="author">
+										<span class="name">
+											<a href="profile.html">Jane Iworder</a>
+											(@janyworder) wrote a review:
+										</span>
 										<br>
-										<span id="" class="level">Rainmaker</span>
-										<br>
-										<span id="">23 reviews</span>
-										<br>
-										<span id="">13.11.2017 20:03</span>
+										<span class="level">
+											GreenHorn
+											<i class="fas fa-circle"></i>
+											4 reviews
+										</span>
 									</p>
 								</div>
-								<div class="col-md-8 col-sm-8 col-xs-12">
-									<p style="padding-top: 5px;">
-										Lorem ipsum Comments dolor sit amet,Dolore assumenda nesciunt, mollitia  consectetur adipisicing elit. aspernatur repudiandae repellat obcaecati officiaiste, deserunt eos modi quibusdam
-									</p>
+								<div class="comment-detail">
+									comment text Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nesciunt impedit voluptas, nulla minus vitae.
 								</div>
-							</div>
-							<div id="review" class="row">
-								<div class="col-md-1 col-sm-1 col-xs-2">
-									<a href="">
-										<img style="width: 50px; height: 50px;" class=" img-circle" src="img/logo.jpg" alt="Review Author">
-									</a>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-10">
-									<p>
-										Sibongie
-										(<span class="username"><a href="">@sibongie</a></span>) 
-										wrote a review:
-										<br>
-										<span id="" class="level">Rainmaker</span>
-										<br>
-										<span id="">5 reviews</span>
-										<br>
-										<span id="">13.11.2017 15:03</span>
-									</p>
-								</div>
-								<div class="col-md-8 col-sm-8 col-xs-12">
-									<p style="padding-top: 5px;">
-										Reviews Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore eligendi iste quae autem at impedit animi odit adipisci praesentium voluptate, aspernatur accusamus qui, ab quos fugiat assumenda reiciendis reprehenderit?
-									</p>
-								</div>
-							</div>
-							<div id="review" class="row">
-								<div class="col-md-1 col-sm-1 col-xs-2">
-									<a href="">
-										<img style="width: 50px; height: 50px;" class=" img-circle" src="img/logo.jpg" alt="Review Author">
-									</a>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-10">
-									<p>
-										Sibongie
-										(<span class="username"><a href="">@sibongie</a></span>) 
-										wrote a review:
-										<br>
-										<span id="" class="level">Rainmaker</span>
-										<br>
-										<span id="">5 reviews</span>
-										<br>
-										<span id="">13.11.2017 15:03</span>
-									</p>
-								</div>
-								<div class="col-md-8 col-sm-8 col-xs-12">
-									<p style="padding-top: 5px;">
-										Reviews Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore eligendi iste quae autem at impedit animi odit adipisci praesentium voluptate, aspernatur accusamus qui, ab quos fugiat assumenda reiciendis reprehenderit?
-									</p>
+								<div class="comment-stats">
+									<i class="far fa-clock"></i> 6 minutes ago
 								</div>
 							</div>
 						</div>
@@ -283,5 +251,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -6,6 +6,10 @@
 *	Website: https://www.weybanskytech.com.ng
 */
 
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
 .user-name{
 	font-weight: bold;
 }
@@ -33,16 +37,8 @@
 /*font-family: 'Neucha', cursive;*/
 
 
-
-body{
-	font-family: 'Lato', sans-serif;
-}
-
-
-
 /*The Top Navigation*/
 nav.main-nav{
-	background-color: #356B44;
 	padding: 5px 0px;
 	min-height: 25px;
 }
@@ -57,55 +53,66 @@ nav.main-nav div.row div{
 	padding: 0px 5px;
 }
 
+nav.main-nav div.row div.nav-logo{
+	width: 12%;
+}
+
+nav.main-nav div.row div.nav-form{
+	width: 50%;
+}
+
+nav.main-nav div.row div.nav-links{
+	width: 38%;
+}
+
 nav.main-nav a.logo{
 	padding: 0px;
 	display: block;
 }
 
 nav.main-nav img{
-	height: 20px;
-	margin-left: -8px;
+	display: block;
+	height: 25px;
+	margin: 0px;
 	margin-top: 3px;
+	margin-left: 5px;
 }
 
 nav.main-nav form{
-	margin: 0px;
-	padding: 0px;
 	padding-top: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 	display: block;
 	font-size: 12px;
-	margin: 0px auto;
-	float: right;
 }
 
 nav.main-nav form input{
-	float: left;
-	height: 25px;
-	width: 120px;
-	margin: 0px;
-	padding: 3px 7px;
-	border: 1px solid #31C299;
+	border: 1px solid #999;
 	border-right: 0px none;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
+	float: left;
+	padding: 3px 8px;
+	height: 26px;
+	width: 82%;
 	outline: 0px;
 }
 
 nav.main-nav form input:focus{
-	border-color: #356B44;
+	/*border-color: #356B44;*/
 }
 
 nav.main-nav form button{
 	float: left;
-	height: 25px;
-	width: 30px;
-	margin: 0px;
-	background-color: #eef;
-	border: 0px none;
-	border-left: 1px solid #eee;
+	margin-right: -1px;
+	height: 26px;
+	width: 18%;
+	background-color: #fff;
+	color: #356B44;
+	border: 1px solid #999;
+	border-left: 0px solid #eee;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
-	color: #356B44;
 }
 
 
@@ -113,6 +120,8 @@ nav.main-nav ul{
 	float: right;
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
+	text-align: right;
 }
 
 nav.main-nav ul li{
@@ -123,9 +132,27 @@ nav.main-nav ul li{
 }
 
 nav.main-nav ul li a{
-	color: #fff;
+	color: #333;
 	font-size: 14px;
 	display: block;
+}
+
+nav.main-nav ul li img{
+	width: 20px;
+  height: 20px;
+  display: inline;
+  margin: 0px;
+}
+
+nav.main-nav ul li a span.badge{
+	vertical-align: top;
+	margin-left: -15px;
+	margin-top: -5px;
+	font-size: 10px;
+}
+
+nav.main-nav ul li a:hover{
+	text-decoration: none;
 }
 
 nav.main-nav ul li i{
@@ -135,10 +162,16 @@ nav.main-nav ul li i{
 
 /*The Second Navigation*/
 section.second-nav{
+	/*background-color: #fcf8e3;*/
+	background-color: #ffffff;
 	padding: 5px 0px;
+	padding-top: 8px;
+	padding-bottom: 12px;
 	margin: 0px;
-	box-shadow: 1px 0px 5px;
-	margin-bottom: 5px;
+	border-top: 1px solid #ddd;
+	border-bottom: 2px solid #ccc;
+	/*box-shadow: 1px 0px 10px;*/
+	/*margin-bottom: 5px;*/
 }
 
 section.second-nav div.container{
@@ -159,7 +192,11 @@ section.second-nav div.profile  div{
 section.second-nav div.profile a{
 	display: inline-block;
 	text-align: left;
-	padding-left: 25px;
+	padding-left: 10px;
+}
+
+section.second-nav div.profile a:hover{
+	text-decoration: none;
 }
 
 section.second-nav div.profile a img{
@@ -191,7 +228,7 @@ section.second-nav div.row.text-center{
 
 section.second-nav div.row.text-center div a{
 	color: #444;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 section.second-nav div.row.text-center div a.active{
@@ -232,97 +269,203 @@ section#article{
 	margin-top: 12px;
 }
 
-div.article-head div.article-head-img img{
+section#article div.container.article-nav{
+	position: fixed;
+	top: 0;
+	display: block;
+	width: 100%;
+	z-index: 3;
+	background-color: #fff;
+	padding: 5px 15px;
+}
+section#article div.container.article-nav a.hub-ico{
+	float: left;color: #333;
+}
+
+section#article div.container.article-nav a{
+	font-size: 20px;
+}
+
+section#article div.container.article-nav a.recommended-ico{
+ 	float: right;color: #333;
+}
+
+section#article div.container.article-content{
+	padding-top:30px;
+}
+
+section#article div.article-head-img{
+	position: relative;
+}
+
+section#article div.article-head-img img{
 	width: 100%;
 }
 
-div.article-head h3{
-	margin-top: 10px;
-	margin-bottom: 5px;
-	font-size: 26px;
-	padding-left: 10px;
+section#article div.article-head-img div.cat{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #333;
+	background-color: #fff;
+	/*background: #113e07;*/
+	/*background-color: #113e0770;*/
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
-div.article-head-body{
-	padding-left: 10px;
+section#article div.article-head-img div.cat a{
+	color: #333;
+	display: block;
+	padding: 7px 15px;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-div.article-head-body i{
-	font-size: 6px !important;
+section#article div.article-head-title{
+	padding: 8px 10px;
+}
+
+section#article div.article-head-title p.title{
+	color: #555;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0px;
+	padding-bottom: 2px;
+}
+
+section#article div.article-head-title p.stats{
+	color: #777;
+	font-size: 12px;
+	margin: 0px;
+}
+
+section#article div.article-head-title p.stats span.seperate{
+	font-size: 4px;
+	padding: 0px 8px;
+	margin-top: 0px;
 	vertical-align: middle;
-	color: #555555;
-	padding: 0px 5px;
 }
 
-div.article-head-body p span{
+section#article div.article-head-title p.stats i{
+	margin-right: 4px;
+}
+
+section#article div.article-head-author{
+	padding: 7px 7px;
+	width: 100%;
+}
+
+section#article div.article-head-author img{
+	display: inline-block;
+	width: 15%;
+	width: 40px;
+	height: 40px;
+}
+
+section#article div.article-head-author p.author{
+	display: inline-block;
+	width: 50%;
+	margin: 0px;
+	vertical-align: middle;
+	padding: 5px 8px;
+	padding-right: 0px;
+}
+
+section#article div.article-head-author p.author span.name a{
+	font-weight: bold;
 	font-size: 14px;
-	font-family: 'Lato', sans-serif;
+	color: #333;
 }
 
-div.article-head-body p a{
-	color: #356B44;
-	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+section#article div.article-head-author p.author span.name a:hover{
 	text-decoration: none;
 }
-div.article-head-body p a:hover{
-	color: #333333;
-}
 
-div.article-head-body a.btn{
-	border-radius: 30px;
-	border: 1px solid #356B44;
-	padding: 3px 6px;
+section#article div.article-head-author p.author span.level{
 	font-size: 12px;
+	color: #555;
 }
 
-div.article-head-body a.btn#follow{
+section#article div.article-head-author p.author-action{
+	display: inline-block;
+	max-width: 34%;
+	margin: 0px;
+	vertical-align: middle;
+	padding: 5px 8px;
+	padding-right: 0px;
+}
 
-}
-div.article-head-body a.btn#following{
-	color: #fff;
-	background-color: #356B44;
-}
-div.article-head-body a.btn#follow:hover{
-	color: #fff;
-	background-color: #356B44;
-}
-div.article-head-body a.btn#following:hover{
+section#article div.article-head-author p.author-action span a{
 	color: #356B44;
-	background-color: #fff;
+	display: block;
+	padding: 5px;
 }
 
+section#article div.article-head-author p.author-action span a:hover{
+	text-decoration: none;
+	box-shadow: 0px 0px 10px #356B44;
+}
+
+section#article div.article-head-author p.author-action span i{
+	font-size: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
 
 /*=============Article Body=================*/
+div.article-content div.row div.art{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 div.article-body{
 	padding-top: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
 	line-height: 28px;
 	letter-spacing: 0.1em;
 	font-family: 'Handlee', cursive;
 }
 
 /*=============Article Footer============*/
+section.article-footer div.row{
+	margin: 0px;
+}
+
+section.article-footer div.row div{
+	padding: 0px;
+}
+
+section.article-footer div.row div form{
+	/*display: none;*/
+	padding: 0px 10px;
+}
+
 section.article-footer ul.nav-tabs{
 	margin-bottom: 5px;
+	padding: 0px 10px;
 }
 
 section.article-footer ul.nav-tabs li a{
-	color: #ffffff;
 	background-color: #356B44;
+	color: #fff;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	padding: 8px 18px;
+	padding: 5px 12px;
 	padding-bottom: 5px;
 	margin-right: -3px;
 }
 
 section.article-footer ul.nav-tabs li.active a{
-	background-color: #356B44;
-	color: #fff;
+	color: #333;
+	background-color: #dedede;
 }
 
 section.article-footer .btn-success{
 	background-color: #356B44;
+	border: 0px;
 }
 
 section.article-footer div#commentAndReviews div.row{
@@ -350,203 +493,322 @@ section.article-footer div#commentAndReviews div.row span.level a{
 }
 
 
-/*=====Profile Page Content=====*/
-#profile-page #profile{
-	padding-top: 15px;
-	padding-bottom: 10px;
-	/*background-color: #f5f5f5;*/
+/**/
+section.article-footer div#commentAndReviews{
+	padding: 10px 2px;
 }
 
-#profile-page #profile div img#profile-picture{
-	height: 160px;
-	width: 160px;
-	border-radius: 50%;
-	float: right;
-	margin-right: 7px;
-	margin-left: 25px;
+section.article-footer div#commentAndReviews div.comment{
+	border-bottom: 2px solid #ccc;
+	padding: 8px 2px;
 }
 
-#profile-page #profile #profile-details h3{
-	font-family: 'Roboto', sans-serif;
-	font-size: 28px;
-	letter-spacing: 2px;
-	margin-top: 7px;
-	margin-bottom: 7px;
+section.article-footer div#commentAndReviews div.comment.review{
+	background-color: #f3f6f8;
 }
 
-#profile-page #profile #profile-details p#profile-username{
-	font-family: 'Roboto', sans-serif;
-	margin-bottom: 7px;
+section.article-footer div#commentAndReviews div.comment div.comment-author img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
 }
 
-#profile-page #profile #profile-details p#profile-username .fa-at{
-	font-size: 18px;
-	margin-right: 3px;
+
+section.article-footer div#commentAndReviews div.comment div.comment-author p.author{
+	display: inline-block;
+	padding-left: 5px;
+	min-width: 70%;
+	/*width: ;*/
+	max-width: 84%;
+	margin: 0px;
 	vertical-align: middle;
-	color: #356B44;
 }
 
-#profile-page #profile #profile-details p#profile-active .fa{
+section.article-footer div#commentAndReviews div.comment div.comment-author p.author span.name a{
+	color: #333;
+	font-weight: bold;
+}
+
+section.article-footer div#commentAndReviews div.comment div.comment-author p.author span.level{
+	font-size: 13px;
+	color: #777;
+}
+
+section.article-footer div#commentAndReviews div.comment div.comment-author p.author span.level i{
+	vertical-align: middle;
+	font-size: 4px;
+	padding: 2px 3px;
+	margin: 0px;
+}
+
+section.article-footer div#commentAndReviews div.comment div.comment-detail{
+	padding-left: 45px;
+	padding-top: 8px;
+	color: #666;
+	font-size: 13px;
+}
+
+section.article-footer div#commentAndReviews div.comment div.comment-stats{
+	padding-left: 45px;
+	padding-top: 8px;
 	font-size: 12px;
-	margin-right: 3px;
+	color: #777;
 }
 
-#profile-page #profile #profile-details p a#follow{
-	border: 2px solid #356B44;
-	border-radius: 30px;
-	padding: 5px 15px;
+section.article-footer div#commentAndReviews div.comment div.comment-stats i{
+	margin-right: 4px;
 }
 
-#profile-page #profile #profile-details p a#follow:hover{
-	color: #ffffff;
-	background-color: #356B44;
-}
 
-#profile-page #profile #profile-details p a#following{
-	margin-left: 10px;
-	border: 2px solid #356B44;
-	border-radius: 30px;
-	color: #ffffff;
-	color: #ffffff;
-	background-color: #356B44;
-	padding: 5px 15px;
-}
-
-#profile-page #profile #profile-details p a#following:hover{
-	color: #00ff00;
-	background-color: #ffffff;
-}
-
-#profile-page #profile #profile-short-bio p{
-	margin-top: 15px;
-	margin-bottom: 0px;
-}
-
-#profile-page #profile-stats{
-	padding-top: 5px;
-	padding-bottom: 10px;
-}
-
-#profile-page #profile-stats div{
+/*===========The Main profilePage=======*/
+section#profilePage div.divrow{
+	position: relative;
+	/*background-color: #ccc;*/
+	background-color: #E8F3EC;
 	padding: 0px 10px;
 }
 
-#profile-page #profile-stats div:nth-child(odd){
-	background-color: #f5f5f5;
+section#profilePage div.divrow div.top{
+	text-align: center;
+	padding: 15px 0px;
+	margin: 0px -5px;
 }
 
-#profile-page #profile-stats a{
-	color: #333333;
-}
-#profile-page #profile-stats a:hover{
-	text-decoration: none;
-	color: #356B44;
-}
-
-#profile-page #profile-stats h5{
-	/*font-weight: 600;*/
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-}
-
-#profile-page #profile-stats p{
-	font-size: 16px;
-}
-
-#profile-page #profile-page-links{
-	margin: 10px 0px;
-	min-height: 60px !important;
-}
-
-#profile-page #profile-page-links #links a{
+section#profilePage div.divrow div.top p.page{
 	display: inline-block;
 	text-align: center;
-	color: #333333;
-	text-decoration: none;
-	margin-right: 7px;
-	padding: 5px 5px;
-	padding-bottom: 7px;
-	min-width: 15px;
-}
-
-#profile-page #profile-page-links #links a:hover{
-	color: #ffffff !important;
-	background-color: #356B44;
-}
-
-#profile-page #profile-page-links #links .fa{
-	/*color: #356B44;*/
-}
-
-#profile-page #profile-page-links #edit-profile-btn a{
-	border: 2px solid #356B44;
-	border-radius: 30px;
-	padding: 5px 12px;
-	/*float: right;*/
-	vertical-align: middle;
-}
-
-#profile-page #profile-page-links #edit-profile-btn a:hover{
-	color: #ffffff;
-	background-color: #356B44;
-}
-
-/*========== Followers / Following ==========*/
-#profile-page div.followers{
-
-}
-#profile-page div.followers .panel-body img{
-	width: 50px;
-	height: 50px;
-}
-#profile-page div.followers .panel-body h5{
 	margin: 0px;
-	padding-top: 3px;
+	padding-top: 4px;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-family: monospace;
+}
+
+section#profilePage div.divrow div.top p a{
+	color:#333;font-size: 18px
+}
+
+section#profilePage div.divrow div.img img{
+	width: 94%;
+	display: block;
+	margin: 0px auto;
+	box-shadow: 0px 0px 30px #eee;
+}
+
+section#profilePage div.divrow div.user_profile{
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px #fff;
+}
+
+section#profilePage div.divrow div.user_profile div.icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+section#profilePage div.divrow div.user_profile div.icon a{
+	color: #333;
+	font-size: 18px;
+	display: block;
+	padding: 5px;
+	padding-top: 10px;
+	padding-right: 12px;
+}
+
+section#profilePage div.user_profile div.user p.name{
+	color: #333;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 30px;
 	padding-bottom: 5px;
 }
-#profile-page div.followers .panel-body h5 a{
-	color: #356B44;
+
+section#profilePage div.user_profile div.user p.level{
+	padding-left: 20px;
+	color: #555;
+	font-size: 12px;
+}
+
+section#profilePage div.user_profile div.user p.level span.username{
+	margin-left: 15px;
+	/*text-align: right;*/
+	float: right;
+	padding-right: 40px;
+}
+
+section#profilePage div.user_profile div.user p.short-bio{
+	padding-left: 20px;
+	padding-right:30px;
+	color: #444;
+	font-size: 13px;
+	margin-bottom: 0px;
+	padding-bottom: 18px;
+	padding-top: 10px;
+	color: #777;
+}
+
+section#profilePage div.user_profile p.stats{
+	text-align: center;
+	margin: 0px auto;
+	width: 90%;
+	padding: 18px 10px;
+	background-color: #fff;
+}
+
+section#profilePage div.user_profile p.stats > span{
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+
+section#profilePage div.user_profile p.stats > span span.text{
+	color: #555;
+	font-weight: lighter;
+	font-size: 12px
+}
+
+section#profilePage div.user_profile p.stats > span span.value{
+	letter-spacing: 4px;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+section#profilePage div.follow{
+	margin: 0px -10px;
+}
+
+section#profilePage div.follow a.edit{
+	display: block;
+
+	/*Javascript*/
+	color: #333;
+	/*background: linear-gradient(to right, #ccc, #bbb, #ccc); */
+	background-color: #E8F3EC;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+}
+
+section#profilePage div.follow a.cancel{
+	/*display: block;*/
+	display: none;
+
+	/*Javascript*/
+	color: #333;
+	/*background: linear-gradient(to right, #ccc, #aaa, #ccc); */
+	background:-color: #E8F3EC;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	padding: 15px;
+}
+
+section#profilePage div.follow a:hover{
 	text-decoration: none;
 }
-#profile-page div.followers .panel-body h5 a:hover{
-	text-decoration: underline;
-	color: #009;
+
+section#profilePage div.follow a.follow{
+	display: block;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
 }
-#profile-page div.followers .panel-body a.btn{
-	border-radius: 30px;
-	padding: 7px 15px;
-	border: 2px solid #356B44;
-	min-width: 84px;
-}
-#profile-page div.followers .panel-body a.btn#follow:hover{
-	color: #ffffff;
-	background-color: #356B44;
-}
-#profile-page div.followers .panel-body a.btn#following{
-	color: #ffffff;
-	background-color: #356B44;
-}
-#profile-page div.followers .panel-body a.btn#following:hover{
-	background-color: #ffffff;
+
+section#profilePage div.follow a.following{
+	display: block;
 	color: #356B44;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
 }
+
+section#profilePage div.about{
+	background-color: #fff;
+	padding: 15px 0px;
+	margin: 0px -10px;
+	box-shadow: 0px 0px 15px #fff;
+}
+
+section#profilePage div.about .panel-body{
+	font-size: 12px;
+	color: #555;
+	padding: 5px 15px;
+}
+
+section#profilePage div.about .panel-title{
+	font-weight: bold;
+	font-size: 14px;
+	padding: 5px 0px;
+}
+
+section#profilePage p.no-detail{
+	font-size: 13px;
+	margin: 0px;
+	padding: 5px 5px;
+	letter-spacing: 1px;
+}
+
+
+/*====== The Edit Profile Page ======*/
+section#profilePage div.edit{
+	display: none;
+	/*display: block;*/
+	padding: 15px 0px;
+	margin: 0px -10px;
+	/*Javascript*/
+	background-color: #fff;
+	box-shadow: 0px 0px 15px #fff;
+}
+
+section#profilePage div.edit input:focus{
+	border-color: #356B44;
+}
+
+
+section#profilePage div.edit button.btn-default{
+	color: #fff; 
+	border-radius: 0px;
+	border: 1px solid #aaa;
+	background-color: #365B44;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*=====LOGIN/SIGNUP PAGE CONTENT*/
-#login-page-text img{
-	width: 100px;
-}
-
 #login-page-text p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #login-page-text a{
 	color: #356B44;
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 30px;
+	font-size: 22px;
+}
+
+#login-page-text a:hover{
+	text-decoration: none;
 }
 
 /*The Login Form*/
@@ -693,17 +955,28 @@ section#hub div.row{
 	padding: 0px;
 }
 
+section#hub div.row.latest{
+	margin-top: 20px;
+}
+
 section#hub h3.title{
 	margin: 0px;
 	padding: 10px 15px;
+	padding-top: 10px;
 	margin-bottom: 5px;
-	font-size: 18px;
-	/*background-color: #ded;*/
-	background: linear-gradient(to right, #eee, #cfc, #eee);
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: 600;
+	background-color: #fff;
+	color: #333;
+	/*background: linear-gradient(to right, #eee, #cfc, #eee);*/
+	/*border-bottom: 2px solid #ddd;*/
 }
 
 section#hub div.row div.post{
 	background: #fff;
+	margin-bottom: 15px;
+	padding: 0px 10px;
 }
 
 section#hub div.row div.image{
@@ -719,16 +992,29 @@ section#hub div.row div.image div.date{
 	right: 5px;
 	font-size: 12px;
 	color: #fff;
-	background: #356B44;
 	border-radius: 50%;
 	padding: 10px;
 	text-align: center;
 	width: 50px;
 	height: 50px;
+
+	/*background: #356B44;*/
+	/*background: #e74c3c;*/
+	/*background-color: #113e0770;*/
+	background-color: #ffffff7a;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 section#hub div.row div.image div.date p{
 	margin: 0px;
+}
+
+section#hub div.row div.image div.date p span:last-child{
+	/*display: none;*/
+	font-size: 9px;
+	display: block;
+	margin-top: -2px;
 }
 
 section#hub div.row div.image div.category{
@@ -736,9 +1022,9 @@ section#hub div.row div.image div.category{
 	bottom: 0;
 	left: 0;
 	font-size: 12px;
-	color: #fff;
-	background: #356B44;
-	border-top-right-radius: 5px;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 section#hub div.row div.image div.category p{
@@ -746,20 +1032,21 @@ section#hub div.row div.image div.category p{
 }
 
 section#hub div.row div.image div.category p a{
-	color: #fff;
+	color: #555;
 	display: block;
-	padding: 5px 7px;
+	padding: 5px 12px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 section#hub div.row div.details{
-	padding: 5px 10px;
+	padding: 5px 8px;
+	border-bottom: 2px solid #ddd;
 }
 
 section#hub div.row div.details p.title{
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 17px;
+	font-weight: 600;
 	margin-bottom: 2px;
 }
 
@@ -779,18 +1066,74 @@ section#hub div.row div.details p.title small a{
 
 section#hub div.row div.details p.facilitator-comment{
 	font-family: 'Lato', sans-serif;
-	font-style: italic;
-	margin-bottom: 2px;
+	/*font-style: italic;*/
+	margin-bottom: 20px;
+	color: #777;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+section#hub div.row.latest div.details p.facilitator-comment{
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 10px;
+	color: #777;
+	font-size: 12px;
+	padding-right: 25px;
 }
 
 section#hub div.row div.details p.stats{
 	font-size: 12px;
-	color: #555;
+	color: #777;
+	width: 100%;
+}
+
+section#hub div.row div.details p.stats span{
+	/*margin-right: 10px;*/
+}
+
+section#hub div.row div.details p.stats span.seperator{
+	font-size: 4px;
+	padding: 0px 8px;
+	margin-top: 0px;
+	vertical-align: middle;
 }
 
 section#hub div.row div.details p.stats i{
 	margin-right: 3px;
 }
+
+
+/*==== Recommended Page Content===*/
+section#recommendation div.container.article-nav{
+	padding: 7px 20px;
+	/*background-color: #fcf8e3;*/
+	background-color: #fff;
+}
+
+section#recommendation div.container.article-nav a.hub-ico{
+	float: left;
+	color: #333;
+	font-size: 20px;
+}
+
+section#recommendation p.commentary{
+	margin-top: 20px; color: #555; font-size: 14px;
+}
+
+section#recommendation form textarea:focus{
+  border-color: #356B44;
+	outline: 0;
+	box-shadow: inset 0 1px 1px #356B44, 0 0 8px #356B44;
+}
+
+section#recommendation form button{
+	background-color: #356B44;border: 0px;color: #fff;
+}
+
+
+
+
+
 
 /*=====NURSERY PAGE CONTENT=====*/
 section#nursery div.container-fluid{
@@ -801,35 +1144,53 @@ section#nursery div.container-fluid{
 section#nursery div.row{
 	margin: 0px;
 	padding: 0px;
+	padding-top: 20px;
 }
 
 section#nursery h3.title{
 	margin: 0px;
-	padding: 10px 20px;
-	margin-bottom: 5px;
-	font-size: 18px;
-	/*background-color: #ded;*/
-	background: linear-gradient(to right, #eee, #cfc, #eee);
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #fff;
+  /* background: linear-gradient(to right, #eee, #cfc, #eee); */
+  border-bottom: 2px solid #ddd;
 }
 
 section#nursery div.row div.post{
-	border-bottom: 1px solid #eee;
+	border-bottom: 2px solid #eee;
 	padding: 0px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 section#nursery div.row div.details{
 	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	display: inline-block;
-	width: 68.7%;
+	width: 66.7%;
 	vertical-align: top;
 }
 
 section#nursery div.row div.details h3{
 	margin: 0px;
-	padding-top: 8px;
+	padding-top: 3px;
 	font-size: 18px;
+}
+
+section#nursery div.row div.details h3 a{
+	color: #333;
+}
+
+section#nursery div.row div.details p.excerpt{
+	margin-bottom: 3px;
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+section#nursery div.row div.details p.detail{
+	margin-bottom: 0px;
 }
 
 section#nursery div.row div.details p span{
@@ -838,22 +1199,23 @@ section#nursery div.row div.details p span{
 }
 
 section#nursery div.row div.details p a.author{
-	color: #555;
+	color: #666;
 	font-size: 13px;
 	display: inline-block;
-	font-weight: bold;
 }
 
 section#nursery div.row div.details p a.cat{
-	color: #555;
-	font-size: 13px;
+	color: #666;
+	font-size: 12px;
 	display: inline-block;
+	text-transform: capitalize;
 }
 
 section#nursery div.row div.image{
 	display: inline-block;
-	width: 30%;
-	height: 60px;
+	width: 32%;
+	/*width: 120px;*/
+	height: 90px;
 	overflow: hidden;
 }
 
@@ -867,14 +1229,19 @@ section#conversations div.container{
 section#conversations div.row{
 	margin: 0px;
 	padding: 0px;
+	padding-top: 20px;
 }
 
 section#conversations div.row h3.title{
 	margin: 0px;
-	padding: 10px 20px;
-	margin-bottom: 5px;
-	font-size: 18px;
-	background: linear-gradient(to right, #eee, #cfc, #eee);
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #fff;
+  /* background: linear-gradient(to right, #eee, #cfc, #eee); */
+  border-bottom: 2px solid #ddd;
 }
 
 section#conversations div.row div.conv{
@@ -883,12 +1250,11 @@ section#conversations div.row div.conv{
 }
 
 section#conversations div.row div.message{
-	padding: 5px;
-	border-bottom: 1px solid #777;
+	padding: 15px 3px;
+	border-bottom: 3px solid #ccc;
 }
 
 section#conversations div.row div.message.unread{
-	background-color: #dfd;
 	/*background-color: #f7d6d6;*/
 	/*background-color: #f2dede;*/
 }
@@ -914,14 +1280,35 @@ section#conversations div.row div.message a p.detail span.name{
 }
 
 section#conversations div.row div.message a p.detail span.time{
-	font-style: italic;
 	float: right;
+	font-size: 12px;
+	color: #777;
 }
 
 section#conversations div.row div.message a p.last-msg{
 	margin: 0px;
 	padding: 0px 3px;
 	font-size: 12px;
+	color: #777;
+}
+
+/**/
+
+section#conversations div.row div.message.unread{
+	font-weight: 500;
+}
+
+
+section#conversations div.row div.message a p.detail span.name{
+	color: #777;
+}
+
+section#conversations div.row div.message.unread a p.detail span.name{
+	color: #333;
+}
+
+section#conversations div.row div.message.unread a p.last-msg{
+	color: #333;
 }
 
 
@@ -941,9 +1328,13 @@ section#message div.row{
 
 section#message div.msg-top{
 	padding: 3px;
-	box-shadow: 1px 0px 5px;
 	margin-bottom: 2px;
 	width: 100%;
+	background-color: #fcf8e3;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
 }
 
 section#message div.msg-top a{
@@ -966,6 +1357,18 @@ section#message div.msg-top a.back i{
 	padding: 5px;
 }
 
+section#message div.msg-top a.discover{
+	float: right;
+	z-index: 3;
+	font-size: 18px;
+	border: ;
+}
+
+section#message div.msg-top a.discover i{
+	padding: 5px;
+	transform: rotate(90deg);
+}
+
 section#message div.msg-top a.profile-pic img{
 	display: block;
 	margin: auto;
@@ -977,7 +1380,6 @@ section#message div.msg-top a.profile-pic img{
 section#message div.msg-top a.profile-pic p{
 	margin: 0px;
 	padding: 0px;
-	margin-left: 35px;
 	font-weight: bold;
 	font-size: 14px;
 }
@@ -985,6 +1387,7 @@ section#message div.msg-top a.profile-pic p{
 section#message div.msg-content{
 	padding: 0px;
 	padding-bottom: 40px;
+	padding-top: 100px;
 }
 
 section#message div.msg-content div#msg-content{
@@ -994,8 +1397,8 @@ section#message div.msg-content div#msg-content{
 
 section#message div.msg-content div#msg-content div{
 	margin: 0px;
-	padding: 3px;
-	border-bottom: 1px solid #777;
+	padding: 8px 3px;
+	border-bottom: 1px solid #cccccc;
 }
 
 section#message div.msg-content div#msg-content div.user{
@@ -1007,7 +1410,7 @@ section#message div.msg-content div#msg-content div.you{
 }
 
 section#message div.msg-content div#msg-content div p{
-	margin: 0px;
+	margin-bottom: 5px;
 	padding: 0px;
 }
 
@@ -1016,7 +1419,7 @@ section#message div.msg-content div#msg-content div p.name{
 }
 
 section#message div.msg-content div#msg-content div p.time{
-	font-style: italic;
+	/**/
 }
 
 section#message div.msg-content div#msg-content div.user p.message{
@@ -1036,6 +1439,7 @@ section#message div.msg-box{
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
+	z-index: 3; 
 }
 
 section#message div.msg-box div{
@@ -1055,7 +1459,8 @@ section#message div.msg-box form input{
 	width: 88%;
 	padding-left: 10px;
 	padding-right: 10px;
-	border: 1px solid #333;
+	border: 1px solid #999;
+	background-color: #ddd;
 	outline: 0;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -1068,7 +1473,7 @@ section#message div.msg-box form input{
 section#message div.msg-box form button{
 	height: 35px;
 	width: 12%;
-	border: 1px solid #333;
+	border: 1px solid #999;
 	outline: 0;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
@@ -1076,7 +1481,8 @@ section#message div.msg-box form button{
 	border-bottom-right-radius: 20px;
 	border-left: 0px;
 	margin-left: -2px;
-	background-color: #356B44;
+	/*background-color: #356B44;*/
+	background-color: #ccc;
 }
 
 
@@ -1155,9 +1561,9 @@ section#search-page div.search-form button{
 }
 
 section#search-page div.search-form div.input-group{
-	border: 2px solid #555;
+	border: 1px solid #777;
 	border-radius: 30px;
-	padding: 10px;
+	padding: 6px 10px;
 	display: block;
 }
 
@@ -1290,6 +1696,7 @@ section#search-page div.category-tag div.well{
 
 
 
+
 @media (max-width: 991px) {
 	/*===Category/Tag Page Content===*/
 	section#search-page div.search-user-content span#user-details{
@@ -1318,37 +1725,6 @@ section#search-page div.category-tag div.well{
 	section#home-page-content div.tab-content div.panel div.panel-body{
 		box-shadow: none;
 		border-bottom: 1px solid #aaa;
-	}
-
-	/*=====Profile Page Content=====*/
-	#profile-page #profile #profile-details h3{
-	 font-size: 24px;
-	}
-	#profile-page #profile div img#profile-picture{
-		height: 140px;
-		width: 140px;
-	}
-	#profile-page #profile #profile-details p a#follow{
-		padding: 5px 12px;
-	}
-	#profile-page #profile #profile-details p a#following{
-		padding: 5px 12px;
-	}
-	#profile-page #profile #profile-short-bio p{
-		margin-top: 2px;
-	}
-	#profile-page #profile-stats{
-		padding-top: 3px;
-		padding-bottom: 0px;
-	}
-
-
-
-	#profile-page div.followers .panel-body div.row div{
-		padding: 0px 7px;
-	}
-	#profile-page div.followers .panel-body a.btn{
-		padding: 5px 10px;
 	}
 
 	/*===Category/Tag Page Content===*/

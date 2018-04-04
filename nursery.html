@@ -14,26 +14,32 @@
 	<nav class="main-nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
 					<a href="home.html" class="logo">
-						<img src="img/logo.png" alt="iWorder logo">
+						<img src="img/logob.jpg" alt="iWorder logo">
 					</a>
 				</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="nav-form col-md-4 col-sm-5 col-xs-6">
 					<form action="" method="">
 						<input type="text" placeholder="Search">
 						<button type="submit"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="nav-links col-md-4 col-sm-4 col-xs-5">
 					<ul>
 						<li>
-							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
+							<a href="profile.html">
+								<img src="svg/coins.svg" alt="Points">
+								304
+							</a>
 						</li>
 						<li>
-							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
+							<a href="notification.html">
+								<img src="svg/bell.svg" alt="Notifications">
+								<span class="badge">200</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -58,8 +64,8 @@
 
 			<div class="row text-center">
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="home.html">
-						<i class="fas fa-home fa-2x"></i>
+					<a href="home.html" class="active">
+						<img src="svg/home.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
@@ -68,13 +74,13 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="nursery.html" class="active">
-						<i class="far fa-snowflake fa-2x"></i>
+					<a href="nursery.html">
+						<img src="svg/nursery-active.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
 					<a href="conversations.html">
-						<i class="fas fa-comments fa-2x"></i>
+						<img src="svg/envelope.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 			</div>
@@ -84,12 +90,16 @@
 	<section id="nursery">
 		<div class="container-fluid">
 			<div class="row"">
-				<h3 class="title">Nursery</h3>
-
+				<!-- Beginnig of the loop -->
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam architecto vel aspernatur velit,
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>
@@ -103,11 +113,15 @@
 				</div>
 				
 
-
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consecteur sit.
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>
@@ -121,8 +135,13 @@
 				</div>
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consectetur sit.
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>
@@ -136,8 +155,13 @@
 				</div>
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consectetur sit.
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>
@@ -151,8 +175,13 @@
 				</div>
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consectetur sit.
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>
@@ -166,8 +195,13 @@
 				</div>
 				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
 					<div class="details">
-						<h3>A Door Ajar</h3>
-						<p>
+						<h3>
+							<a href="article.html">A Door Ajar</a>
+						</h3>
+						<p class="excerpt">
+							Lorem ipsum dolor sit amet, consectetur sit.
+						</p>
+						<p class="detail">
 							<a href="profile.html" class="author">Jane Iworder</a>
 							<span class="fas fa-circle"></i></span>
 							<a href="category.html" class="cat">Poetry</a>

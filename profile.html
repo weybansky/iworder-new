@@ -10,114 +10,105 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<!-- The top Nav Bar -->
-	<nav class="main-nav">
+
+	<section id="profilePage">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-3">
-					<a href="home.html" class="logo">
-						<img src="img/logo.png" alt="iWorder logo">
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<form action="" method="">
-						<input type="text" placeholder="Search">
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-3">
-					<ul>
-						<li>
-							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
-						</li>
-						<li>
-							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-
-
-	<section id="profile-page">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+				<div class="divrow col-xs-12 col-xs-offset-0">
 					
-					<div id="profile" class="row">
-						<div class="col-md-5 col-sm-4 col-xs-6">
-							<img id="profile-picture" src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
-						</div>
-						<div id="profile-details" class="col-md-7 col-sm-8 col-xs-6">
-							<h3 style="padding-top: 20px;">Jane Iworder</h3>
-							<p id="profile-username">
-								<i class="fa fa-at" aria-hidden="true"></i>janyworder
-							</p>
-							<p>
-								<a id="follow" href="edit-profile.html" class="btn btn-default" role="button">
-									Edit Profile
-								</a>
-							</p>
-						</div>
-						<div id="profile-short-bio" class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
-							<p class="text-center">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis fugit totam dolorem corrupti, exercitationem
-							</p>
-						</div>
-					</div>
-
-					<div id="profile-stats" class="row text-center">
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<a href="following.html">
-								<h5>Following</h5>
-								<p>568</p>
-							</a>
-						</div>
-						<div id="profile-stats-middle" class="col-md-4 col-sm-4 col-xs-4">
-							<a href="#user-posts">
-								<h5>Posts</h5>
-								<p>120</p>
-							</a>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<a href="followers.html">
-								<h5>Followers</h5>
-								<p>2422</p>
-							</a>
-						</div>
-					</div>
-
-					<div id="profile-page-links" class="row">
-						<div id="links" class="col-md-12 col-sm-12 col-xs-12">
+					<div class="top"">
+						<p style="float: left;margin: 0px;">
 							<a href="home.html">
-								<!-- <i class="fa fa-home fa-2x" aria-hidden="true"></i> -->
-								<i class="fas fa-home fa-2x"></i>
-								<br />Home
+								<i class="fas fa-home"></i>
 							</a>
-							<a href="#conversation.html">
-								<!-- <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> -->
-								<i class="far fa-envelope fa-2x"></i>
-								<br />Conversation
+						</p>
+						<p class="page">
+							PROFILE
+						</p>
+						<p style="float: right;margin: 0px;">
+							<a href="search-user.html">
+								<i class="fas fa-search"></i>
 							</a>
-							<a href="#activity-me.html">
-								<!-- <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i> -->
-								<i class="far fa-bell fa-2x"></i>
-								<br />My Activity
-							</a>
-						</div>
+						</p>
 					</div>
 
-					<div id="profile-other-details" class="row">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">About Me</h3>
+					<div class="img">
+						<img src="img/portrait1.jpg" alt="Profile Picture">
+					</div>
+
+
+					<div class="user_profile">
+						<div class="icon">
+							<a href="conversations.html">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</div>
+
+						<div class="user">
+							<p class="name">
+								Sophie Scneider
+							</p>
+
+							<p class="level">
+								<span>
+									<i class="fas fa-tint"></i>
+									Green
+								</span>
+								<span class="username">
+									<i class="fas fa-at" style="color: #777;"></i>
+									sophie001
+								</span>
+							</p>
+
+							<p class="short-bio">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim commodi, ex reprehenderit libero perspiciatis laboriosam!
+							</p>
+						</div>
+
+						<p class="stats">
+							<span>
+								<span class="text">LIKES</span>
+								<br>
+								<span class="value">452</span>
+							</span>
+
+							<span>
+								<span class="text">FOLLOWERS</span>
+								<br>
+								<span class="value">320</span>
+							</span>
+
+							<span>
+								<span class="text">POSTS</span>
+								<br>
+								<span class="value">94</span>
+							</span>
+						</p>
+					</div>
+
+					<div class="follow"">
+						<a role="button" class="edit" href="#" id="edit_profile_btn" onclick="edit_profile_btn()">
+							<i class="fas fa-pencil-alt" style="margin-right: 10px;"></i> EDIT PROFILE
+						</a>
+						<a role="button" class="cancel" href="#edit-profile" id="cancel_edit_profile" onclick="cancel_edit_profile()">
+							Cancel
+						</a>
+					</div>
+					
+					<!-- Important section Edit your profile or not -->
+
+					<div id="no_edit" class="about">
+						<!--  -->
+						<div class="panel-heading">
+								<h3 class="panel-title">About</h3>
 							</div>
 							<div class="panel-body">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, corporis iusto asperiores ducimus, nostrum non minima et earum pariatur autem saepe dolores officiis corrupti qui accusantium aspernatur, quod dignissimos repellendus quam vel eligendi! Minus, quibusdam error ducimus natus facilis accusamus quas quo dolores magnam! Autem non dicta quis nesciunt cupiditate.
+
+								<!-- This is displayed when the user doesn't have a descirption -->
+								<p class="no-detail">
+									Write a short story about yourself
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -125,6 +116,15 @@
 							</div>
 							<div class="panel-body">
 								Praise Abiodun, Donald Trump
+
+								<!-- This is displayed when the user has no Rainmakers -->
+								<p class="no-detail">
+									You do not have a RainMaker yet
+									<br>
+									<a href="#facilitators" style="color: #555;">
+										See all available Rainmakers
+									</a>
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -132,6 +132,11 @@
 							</div>
 							<div class="panel-body">
 								Male
+
+								<!-- This is displayed when the user didn't specify sex -->
+								<p class="no-detail">
+									Not Specified
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -139,6 +144,11 @@
 							</div>
 							<div class="panel-body">
 								Ife, Nigeria
+
+								<!-- This is displayed when the user didn't specify their location -->
+								<p class="no-detail">
+									Not Specified
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -146,6 +156,11 @@
 							</div>
 							<div class="panel-body">
 								Poetry, Short Story, Prose, Fiction, Speculative/Fantasy
+
+								<!-- This is displayed when the user has no Genre -->
+								<p class="no-detail">
+									No Genre
+								</p><!-- end of display -->
 							</div>
 
 							<div class="panel-heading">
@@ -155,14 +170,136 @@
 								Reading Only,
 								Reading and Writing,
 								Critique / Review
+
+								<!-- This is displayed when the user didn't specify thier interest -->
+								<p class="no-detail">
+									No Interests yet
+								</p><!-- end of display -->
 							</div>
 
-
-						</div>
 					</div>
 
-				</div><!-- End of Column -->
 
+
+
+
+
+					<div id="edit_profile_view" class="edit">	
+							<!--  -->
+						<form action="" method="POST">
+							<div class="col-md-6 col-md-offset-3">
+								
+								<div id="profile" class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12" style="padding: 20px 15px;">
+											<label for="profile-picture">Change profile picture</label>
+											<input type="file" name="profile-picture">
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="full-name">Name</label>
+											<input type="text" name="full-name" class="form-control" placeholder="(Full Name)" value="Jane Iworder">
+										</div>
+
+										<div class="form-group">
+											<label for="username">Username</label>
+											<input type="text" name="username" class="form-control" placeholder="(@username)" value="@janyworder">
+										</div>
+
+										<div class="form-group">
+											<label for="email">Email Address</label>
+											<input type="email" name="email" class="form-control" placeholder="(example@example.com)" value="example@example.com">
+										</div>
+
+										<div class="form-group">
+											<label for="short-bio">Short Description</label>
+											<input type="text" name="short-bio" class="form-control" placeholder="(Write a short description about yourself)" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores inventore omnis nulla, officia ducimus!">
+										</div>
+									</div>
+								</div>
+
+								<div id="profile-other-details" class="row">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<label for="about-me" class="panel-title">About Me</label>
+										</div>
+										<div class="panel-body">
+											<textarea name="about-me" class="form-control" style="width: 100%;" rows="4" placeholder="(Tell us about yourself, keep it as fun as possibe!)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sunt officia doloremque expedita, tempore reiciendis quod distinctio fuga, aut magni minus excepturi temporibus iusto quae!</textarea>
+										</div>
+
+										<div class="panel-heading">
+											<label for="rain-makers" class="panel-title">Rainmakers</label>
+										</div>
+										<div class="panel-body">
+											<div class="no-rain">
+												<p>
+													You do not have a RainMaker yet
+													<br style="border-bottom: 10px;">
+													<a href="#facilitators-page" style="color: #356B44;">
+														See all available Rainmakers.
+													</a>
+												</p>
+											</div>
+
+											<div class="rain">
+											  <label>
+											    <a style="color: #356B44;" href="profile.html">Jane Iworder</a>
+											  </label>
+											</div>
+										</div>
+
+										<div class="panel-heading">
+											<label for="sex" class="panel-title">Sex</label>
+										</div>
+										<div class="panel-body">
+											<select name="sex" id="" class="form-control">
+												<option value="">Not Specified</option>
+												<option value="">Male</option>
+												<option value="">Female</option>
+												<option value="">Others</option>
+											</select>
+										</div>
+
+										<div class="panel-heading">
+											<label for="location" class="panel-title">From</label>
+										</div>
+										<div class="panel-body">
+											<input type="text" name="location" class="form-control" placeholder="(Which parts of Africa are you from?)" value="Ife, Nigeria">
+											<p class="help-block">eg. Town, Country</p>
+										</div>
+
+										<div class="panel-heading">
+											<label for="genre" class="panel-title">Genre</label>
+										</div>
+										<div class="panel-body">
+											<input type="text" name="genre" class="form-control" placeholder="(Do you write poetry, or are you a fan of thrillers?)" value="Poetry">
+											<p class="help-block">(eg. Poetry, Short Story, Prose)</p>
+										</div>
+
+										<div class="panel-heading">
+											<label for="interests" class="panel-title">Interested In</label>
+										</div>
+										<div class="panel-body">
+											<input type="text" name="interests" class="form-control" placeholder="(Reading, Writing, Critique, Review)" value="Reading and Writing">
+										</div>
+
+										<div class="panel-body">
+											<button type="submit" class="btn btn-default form-control">
+												Update Profile
+											</button>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</form>
+
+					</div><!-- End of Edit profile page -->
+
+				</div><!-- End of Divrow -->
 			</div><!-- End of row -->
 		</div><!-- End of container -->
 	</section>
@@ -170,5 +307,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
