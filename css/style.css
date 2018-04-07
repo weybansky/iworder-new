@@ -6,19 +6,6 @@
 *	Website: https://www.weybanskytech.com.ng
 */
 
-body{
-	font-family: 'Roboto', sans-serif;
-}
-
-.user-name{
-	font-weight: bold;
-}
-
-.rain-maker{
-	font-style: italic;
-}
-
-
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 /*font-family: 'Lato', sans-serif;*/
@@ -36,6 +23,32 @@ body{
 /*font-family: 'Patrick Hand', cursive;*/
 /*font-family: 'Neucha', cursive;*/
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+/*font-family: 'Titillium Web', sans-serif;*/
+
+
+
+/*Links to local fonts*/
+@font-face {
+	font-family: Lucida;
+	src: url(../fonts/lucida-grande/LucidaGrande.ttf);
+}
+
+@font-face {
+	font-family: Helveticaneue;
+	src: url(../fonts/helveticanue/HelveticaNeue.ttf);
+}
+
+/*font-family: 'Helvetica Neue', sans-serif;*/
+
+
+body{
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: Lucida, sans-serif;
+}
+
+
+
 
 /*The Top Navigation*/
 nav.main-nav{
@@ -46,7 +59,8 @@ nav.main-nav{
 nav div.container,
 nav div.row{
 	padding: 0px;
-	margin: 0px;
+	margin: 0px !important;
+	width: 100%;
 }
 
 nav.main-nav div.row div{
@@ -58,11 +72,11 @@ nav.main-nav div.row div.nav-logo{
 }
 
 nav.main-nav div.row div.nav-form{
-	width: 50%;
+	width: 48%;
 }
 
 nav.main-nav div.row div.nav-links{
-	width: 38%;
+	width: 40%;
 }
 
 nav.main-nav a.logo{
@@ -158,6 +172,27 @@ nav.main-nav ul li a:hover{
 nav.main-nav ul li i{
 	padding-right: 1px;
 }
+
+nav.main-nav div.row div.login ul li{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav.main-nav div.row div.login ul li a{
+	display: block;
+	padding: 5px 12px;
+	font-weight: bold;
+	/*font-family: 'Lato', sans-serif;*/
+}
+
+nav.main-nav div.row div.login ul li a:hover{
+	background-color: #356B44;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+
 
 
 /*The Second Navigation*/
@@ -787,18 +822,18 @@ section#profilePage div.edit button.btn-default{
 
 
 
-
-
-
-
-
-
-
-
-
 /*=====LOGIN/SIGNUP PAGE CONTENT*/
+#login-page-text{
+	margin-top: 25px;
+}
+
 #login-page-text p{
+	margin-top: 15px;
 	font-size: 18px;
+}
+
+#login-page-text p.login{
+	font-size: 14px;
 }
 
 #login-page-text a{
@@ -830,6 +865,7 @@ section#profilePage div.edit button.btn-default{
 }
 
 #login-form form div.input-group span{
+	height: 35px;
 	background-color: rgba(255, 255, 255, 0.3) !important;
 	color: #555555;
 	font-size: 20px;
@@ -839,6 +875,7 @@ section#profilePage div.edit button.btn-default{
 }
 
 #login-form form div.input-group input{
+	height: 36px;
 	border: 1px #777 solid;
 	border-left-style: hidden;
 	border-radius: 0px 30px 30px 0px !important;
@@ -1696,7 +1733,7 @@ section#search-page div.category-tag div.well{
 
 
 
-
+/*For Small(sm) or Tablet Devices*/
 @media (max-width: 991px) {
 	/*===Category/Tag Page Content===*/
 	section#search-page div.search-user-content span#user-details{
@@ -1709,6 +1746,7 @@ section#search-page div.category-tag div.well{
 }
 
 
+/*For ExtraSmall(xs) or Mobile Devices*/
 @media (max-width: 768px) {
 	section#home-page-content{
 		margin-top: 10px;
@@ -1795,4 +1833,29 @@ section#search-page div.category-tag div.well{
 		margin-bottom: 10px;
 		margin-top: 10px;
 	}
+}
+
+
+
+/*For Screens above Mobile (Tablet)*/
+@media (min-width: 768px) {
+	/*The Login Page*/
+	#login-form form .form-group{
+		margin-bottom: 20px;
+	}
+
+
+	/*the Login and Signup Page*/
+	nav.main-nav{
+
+	}
+
+}
+
+
+
+/*For screen above Tablet (Desktop)*/
+@media (min-width: 991px) {
+
+	
 }
