@@ -2,7 +2,6 @@
 function msg_box_focusin(){
 	document.getElementById('msg-input').style.backgroundColor = "#fff";
 }
-
 function msg_box_focusout(){
  document.getElementById('msg-input').style.backgroundColor = "#ddd";
 }
@@ -26,6 +25,44 @@ function cancel_edit_profile () {
 	document.getElementById('cancel_edit_profile').style.display = 'none';
 	document.getElementById('edit_profile_btn').style.display = 'block';
 }
+
+
+// Signup page Password Match
+function password_match () {
+	var password = document.getElementById('password').value;
+	var confirm_password = document.getElementById('confirm_password').value;
+
+	var p_lenght = password.length;
+	var cp_lenght = confirm_password.length;
+
+	if (p_lenght < 2 && cp_lenght < 2) {
+		// console.log('lessthan two');
+		// when entered password is less that 2
+		//  it should do nothing
+		document.getElementById('confirm_password').style.borderColor = '#356B44';
+		document.getElementById('confirm_password').style.boxShadow = '2px 0px 3px #356B44';
+		document.getElementById('password_match').innerHTML = '';
+
+	} else {
+		if (password === confirm_password) {
+			document.getElementById('confirm_password').style.borderColor = '#356B44';
+			document.getElementById('confirm_password').style.boxShadow = '2px 0px 3px #356B44';
+
+			document.getElementById('password_match').style.color = '#356B44';
+			document.getElementById('password_match').innerHTML = 'Password matches';
+
+		} else {
+			document.getElementById('confirm_password').style.borderColor = '#843534';
+			document.getElementById('confirm_password').style.boxShadow = '2px 0px 3px #843534';
+
+			document.getElementById('password_match').style.color = '#843534';
+			document.getElementById('password_match').innerHTML = 'Password does not match';
+		}
+	}
+}
+
+
+
 
 
 

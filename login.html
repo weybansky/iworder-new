@@ -8,9 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="icon" href="img/favicon.jpg" type="image/jpg">
 </head>
 <body>
 	<!-- The top Nav Bar -->
+	<!-- This is the Nav that is displayed when user is not looged in -->
 	<nav class="main-nav">
 		<div class="container">
 			<div class="row">
@@ -38,72 +41,87 @@
 		</div>
 	</nav>
 
-	<div id="login-page-text" class="container">
-		<div class="row text-center">
-			<div class="col-md-12 col-xs-12 col-sm-12">
-				<p>
-					Connect and meet with new 
-					<a href="home.html"><i>writers and poets</i></a> across  
-					<span>
-						Africa.
-					</span>
-				</p>
+	<section id="signup_page">
+	
+		<div id="login-page-text" class="container">
+			<div class="row text-center">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+					<p>
+						Connect and meet with new 
+						<a href="home.html"><i>writers and poets</i></a> across
+						<span>
+							Africa.
+						</span>
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
 
 
-	<div id="login-form" class="container">
-		<div class="row text-center">
-			<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
-				<div class="panel">
-					<div class="panel-body">
-						<h3>Login to iWorder</h3>
-						<form action="/login" method="POST">
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="far fa-envelope"></i></i></span>
-									<input type="email" class="form-control" placeholder="Email address">
+		<!-- Errors from Sign Up Form are displayed here -->
+		<div class="errors container">
+			<div class="row text-center">
+				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+
+					<!-- Negative Error Message -->
+					<div class="alert alert-danger alert-dismissible" role="alert">
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					  <!-- Error Message Goes here -->
+					  <strong>Warning!</strong>. Invalid <strong>Email</strong> and/or <strong>Password</strong>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="login-form" class="container">
+			<div class="row text-center">
+				<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
+					<div class="panel">
+						<div class="panel-body">
+							<h3>Login to iWorder</h3>
+							<form action="/login" method="POST">
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="far fa-envelope"></i></i></span>
+										<input name="email" type="email" class="form-control" placeholder="Email address" required>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fas fa-lock"></i></span>
-									<input type="password" class="form-control" placeholder="Password">
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fas fa-lock"></i></span>
+										<input name="password" type="password" class="form-control" placeholder="Password" required>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<button class="btn btn-success form-control">Login</button>
-							</div>
-						</form>
+								<div class="form-group">
+									<button type="submit" class="btn btn-success form-control">Login</button>
+								</div>
 
-						<div id="divide">
-							<hr>
-							<span>or</span>
-							<hr>
-						</div>
+								<div class="">
+									<p class="help-block">
+										<a href="forgot-password.html">Forgot Password?</a>
+									</p>
+								</div>
+							</form>
 
-						<div id="signup-options">
-							<a id="facebook-signup-button" href="#facebook_login" role="button" class="btn btn-default" style="color:#1133aa;">
-								<i class="fab fa-facebook-f"></i>
-								Login with Facebook
-							</a>
-							<a id="google-signup-button" href="#google_login" role="button" class="btn btn-default" style="color:#ff0000;">
-								<i class="fab fa-google-plus-g"></i>
-								Login with Google
-							</a>
 						</div>
 					</div>
-				</div>
-				<div id="form-footer">
-					<p>By clicking continue, you agree to the <a href="#terms-and-conditions">Terms and Conditions</a> of iWorder.</p>
-					<p class="copyright"><i class="far fa-copyright"></i> iWorder 2018</p>
+					<div id="form-footer">
+						<p class="login">
+							Not a worder? <a href="signup.html">Create an account</a>
+						</p>
+						<p class="copyright"><i class="far fa-copyright"></i> iWorder 2018</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+
+	</section><!-- End if login/ signup page -->
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
