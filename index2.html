@@ -12,7 +12,7 @@
 <body>
 		<!-- The top Nav Bar -->
 	<!-- This is the Nav that is displayed when user is not looged in -->
-	<nav class="main-nav" style="box-shadow: 0px 0px 10px #ccc;">
+	<nav class="main-nav visible-xs visible-sm" style="box-shadow: 0px 0px 10px #ccc;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-3"">
@@ -39,9 +39,10 @@
 		</div>
 	</nav>
 
+	<br><br>
 
 	<!-- The top Nav Bar -->
-	<nav class="main-nav">
+	<nav class="main-nav visible-xs visible-sm">
 		<div class="container">
 			<div class="row">
 				<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
@@ -77,8 +78,8 @@
 		</div>
 	</nav>
 
-	<!-- The Second Navigation -->
-	<section class="second-nav">
+	<!-- The Second Navigation   without the active icons links-->
+	<section class="second-nav visible-xs visible-sm">
 		<div class="container">
 			<div class="row profile">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -117,12 +118,10 @@
 		</div>
 	</section>
 
+	<br><br>
 
-
-	<br><br><br><br>
-
-		
-	<section class="second-nav">
+	<!-- The Second Navigation   with the active icons links -->
+	<section class="second-nav visible-xs visible-sm">
 		<div class="container">
 			<div class="row profile">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -161,8 +160,71 @@
 		</div>
 	</section>
 
+	<!-- The main Navigation for the desktop -->
+	<!-- This is the on only Nav that showas n desktops -->
+	<nav class="navbar navbar-default visible-md visible-lg">
+	  <div class="container-fluid">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home-active.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html" class="active">
+	        		<i class="fab fa-hubspot"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
 
-	
+	      <form class="navbar-form navbar-left">
+	        <div class="input-group">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+	        </div>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="dropdown">
+	      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	      	  	<img src="img/portrait1.jpg" class="img-circle" alt="Profile Picture">
+	      	  	Jane Iworder<span class="glyphicon glyphicon-menu-down" style="margin-left: 3px;"></span>
+	      	  </a>
+	      	  <ul class="dropdown-menu">
+	      	    <li><a href="Profile.html">Profile</a></li>
+	      	    <li><a href="search-user.html">Followers</a></li>
+	      	    <li><a href="hub.html">Posts</a></li>
+	      	    <li role="separator" class="divider"></li>
+	      	    <li><a href="login.html">Login</a></li>
+	      	    <li><a href="l=signup.html">Log Out</a></li>
+	      	  </ul>
+	      	</li>
+
+	        <li class="create">
+	        	<a href="create-post.html">
+	        		 Create Article
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
+	<!-- Creating some space -->
+	<div style="margin-top: 400px;"></div>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
