@@ -293,26 +293,31 @@ nav.navbar.navbar-default{
 	background-color: #fff;
 }
 .nav.navbar-nav{
-	min-width: 260px;
+	min-width: 240px;
 }
 .nav.navbar-nav img{
 	width: 28px;height: 28px;
 }
 .navbar-nav > li > a {
     padding: 7px 15px;
-    margin-right: 5px;
+    margin-right: 2px;
     display: block;
 }
+
+.navbar-nav.navbar-right > li > a.dropdown-toggle{
+    padding: 7px 10px 7px 5px;
+}
+
+
 .navbar-nav > li {
 	display: block;
 }
 .navbar-form{
-	min-width: 260px;
 	margin: 0px;
-	padding: 4px 10px;
+	padding: 4px 5px 4px 5px;
 }
 .navbar-form input{
-	min-width: 280px;
+	min-width: 180px;
 	outline: 0;
 	padding: 6px 6px 6px 14px;
 	margin: 0px;height: 34px;
@@ -351,8 +356,14 @@ nav.navbar.navbar-default{
 	font-weight: bold;
 	color: #333 !important;
 }
+
+.navbar-right li ul li a{
+	font-weight: normal;
+	color: #333 !important;
+}
+
 .navbar-right li.create a{
-	padding: 10px 15px;
+	padding: 10px 12px 10px 5px;
 	margin-top: 1px;
 	font-size: 14px;
 }
@@ -1105,6 +1116,10 @@ section#hub div.row div.post{
 	padding: 0px 10px;
 }
 
+section#hub div.row.latest div.post:last-child div.details{
+	border-bottom: 0px;
+}
+
 section#hub div.row div.image{
 	width: 100%;
 	height: 200px;
@@ -1123,10 +1138,7 @@ section#hub div.row div.image div.date{
 	text-align: center;
 	width: 50px;
 	height: 50px;
-
-	/*background-color: #113e0770;*/
-	/*background-color: #ffffff7a;*/
-	background: #ddd;
+	background: #ffffff7f;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -1171,12 +1183,12 @@ section#hub div.row div.details{
 
 section#hub div.row div.details p.title{
 	font-size: 17px;
-	font-weight: 600;
+	font-weight: 500;
 	margin-bottom: 2px;
 }
 
 section#hub div.row div.details p.title a{
-	color: #333;
+	color: #444;
 }
 
 section#hub div.row div.details p.title small{
@@ -1266,16 +1278,14 @@ section#nursery div.container-fluid{
 	margin: 0px;
 }
 
-section#nursery div.row{
+section#nursery div.row.pad{
 	margin: 0px;
 	padding: 0px;
-	padding-top: 20px;
 }
 
 section#nursery h3.title{
 	margin: 0px;
   padding: 10px 15px;
-  margin-bottom: 5px;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1286,12 +1296,14 @@ section#nursery h3.title{
 
 section#nursery div.row div.post{
 	border-bottom: 2px solid #eee;
-	padding: 0px;
+	padding: 10px 7px 7px 10px;
+	margin-bottom: -2px;
+	margin-top: -1px;
+	background-color: #fff;
 }
 
 section#nursery div.row div.details{
-	padding-left: 20px;
-	padding-top: 5px;
+	padding-top: 0px;
 	padding-bottom: 5px;
 	display: inline-block;
 	width: 66.7%;
@@ -1300,7 +1312,7 @@ section#nursery div.row div.details{
 
 section#nursery div.row div.details h3{
 	margin: 0px;
-	padding-top: 3px;
+	padding-top: 0px;
 	font-size: 18px;
 }
 
@@ -1827,6 +1839,8 @@ footer#main{
 	padding: 20px 0 5px 0;
 	background-color: #eeeeee80;
 	font-size: 12px;
+	color: #999;
+	background-color: #262626;
 }
 
 footer#main i.fa-circle{
@@ -1837,7 +1851,7 @@ footer#main i.fa-circle{
 }
 
 footer#main a{
-	color: #333;
+	color: #999;
 }
 
 footer#main a.user{
@@ -1950,6 +1964,11 @@ footer#main a.user{
 		margin-bottom: 10px;
 		margin-top: 10px;
 	}
+	
+	footer#main p.copyright{
+		padding-top: 20px;
+	}
+
 }
 
 
@@ -1958,6 +1977,9 @@ footer#main a.user{
 @media (min-width: 768px) {
 	body{
 		font-family: Lucida, sans-serif;
+	}
+	body{
+		padding-top: 60px;
 	}
 
 	/*The Login Page*/
@@ -1972,10 +1994,33 @@ footer#main a.user{
 /*For screen above Tablet (Desktop)*/
 @media (min-width: 991px) {
 	body{
-		padding-top: 50px;
+		padding-top: 45px;
 	}
 	section#hub div.row div.image{
 		/*height: 250px;*/
 	}
+	nav.navbar{
+		padding-top: 2px;
+	}
+	nav.navbar div.container{
+		padding: 0px 10px 0px 90px;
+	}
+	.navbar-nav > li > a {
+	   padding: 7px 30px;
+	}
+	section#hub .row.latest h3.title {
+		padding-left: 100px;
+		font-size: 16px;
+	}
+	section#nursery div.row.pad{
+		padding-top: 10px;
+	}
 	
+}
+
+
+@media (min-width: 1200px) {
+	.navbar-form input {
+	    min-width: 350px;
+	 }
 }
