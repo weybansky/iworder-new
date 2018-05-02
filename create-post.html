@@ -11,34 +11,41 @@
 
 	<!-- TinyMCE -->
 	<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
-	<script>tinymce.init({ selector:'textarea' });</script>
+	<!-- <script>tinymce.init({ selector:'textarea' });</script> -->
+	<script>
+		tinymce.init({
+			selector:'textarea',
+			branding: false,
+			height: 150,
+			plugins: "wordcount",
+			// statusbar: false,
+			menubar: false
+		});
+	</script>
 
 </head>
 <body>
 	<!-- The top Nav Bar -->
-	<nav class="main-nav">
+	<nav class="main-nav visible-xs visible-sm" style="box-shadow: 0px 0px 10px #ccc;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="col-md-4 col-sm-4 col-xs-3"">
 					<a href="home.html" class="logo">
-						<img src="img/logo.png" alt="iWorder logo">
+						<img src="img/logob.jpg" alt="iWorder logo">
 					</a>
 				</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<form action="" method="">
-						<input type="text" placeholder="Search">
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-3">
+				<div class="col-md-8 col-sm-8 col-xs-9 login">
 					<ul>
 						<li>
-							<a href="profile.html"><i class="fas fa-dollar-sign"></i>304</a>
+							<a href="add_note.html">
+								Add Note
+							</a>
 						</li>
 						<li>
-							<a href="notification.html"><i class="far fa-bell"></i></i>2</a>
+							<a href="search-post.html">
+								My Posts
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -46,41 +53,108 @@
 		</div>
 	</nav>
 
+	<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html">
+	        		<i class="fas fa-users" style="font-size: 28px;"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
+
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="create">
+	      		<a href="add_note.html">
+	      			 Add Note
+	      		</a>
+	      	</li>
+
+	        <li class="create">
+	        	<a href="search-post.html">
+	        		 My Posts
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
 	<section id="create-post">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-					<h3 class="h3">Create an new article</h3>
+					<h3 class="">Create a new article</h3>
 
 					<form class="create-post" action="" method="">
 						<div class="form-group">
 							<label for="title">Title:</label>
-							<input name="title" type="text" class="form-control">
+							<input name="title" id="name" type="text" class="form-control" placeholder="Title">
 						</div>
 
 						<div class="form-group">
 							<label for="category">Categories:</label>
-							<input name="category" type="text" class="form-control" placeholder="">
-							<p class="help-block">Not more than 3 categories. Seperate with commas</p>
+							<!-- <input name="category" type="text" class="form-control" placeholder=""> -->
+							<!-- <p class="help-block">Not more than 3 categories. Seperate with commas</p> -->
+							<select name="category" id="category" class="form-control" style="border-radius: 30px;">
+								<option value="">-- select a category --</option>
+								<option value="poetry">Poetry</option>
+								<option value="">Memoir</option>
+								<option value="">Fiction</option>
+								<option value="">Essay/ Article</option>
+								<option value="">Short Story</option>
+								<option value="">Flash</option>
+								<option value="">Non-Fiction></option>
+								<option value="">Speculative</option>
+								<option value="">Series</option>
+								<option value="">Book Review</option>
+								<option value="">Uncategorized</option>
+							</select>
 						</div>
 
 						<div class="form-group">
 							<label for="tag">Tags:</label>
-							<input name="tag" type="text" class="form-control" placeholder="">
+							<input name="tag" id="tag" type="text" class="form-control" placeholder="tag1,  tag2">
 							<p class="help-block">seperate with commas</p>
 						</div>
 
 						<div class="form-group">
+							<label for="short_dec">Decription:</label>
+							<input type="text" id="short_dec" maxlength="75" class="form-control" name="short_dec" placeholder="Add a short description">
+							<p class="help-block">maximum of 75 characters</p>
+						</div>
+
+						<div class="form-group">
 							<label for="body">Content:</label>
-							<textarea name="body" id="" rows="5" class="form-control"></textarea>
+							<textarea name="body" id="body" rows="10" class="form-control"></textarea>
 						</div>
 
 						<div class="form-group">
-							<label for="article-picture">Article Image</label>
-							<input type="file" class="form-cotrol">
+							<label for="image" class="btn btn-default" style="border-radius: 0px;">
+								<i class="fas fa-camera"></i> Add cover image(recommended)
+								<input name="image" id="image" onchange="img_upload()" type="file" class="form-cotrol" style="display: none;">
+							</label>
+							<p class="help-block" id="err_image">Only</p>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group" style="margin-top: 50px;">
 							<button class="btn btn-default">Create</button>
 						</div>
 					</form>
@@ -92,5 +166,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

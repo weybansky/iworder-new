@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create new Article | IWORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- TinyMCE -->
+	<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+	<!-- <script>tinymce.init({ selector:'textarea' });</script> -->
+	<script>
+		tinymce.init({
+			selector:'textarea',
+			branding: false,
+			height: 150,
+			plugins: "wordcount",
+			// statusbar: false,
+			menubar: false
+		});
+	</script>
+
+</head>
+<body>
+	<!-- The top Nav Bar -->
+	<nav class="main-nav visible-xs visible-sm" style="box-shadow: 0px 0px 10px #ccc;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-3"">
+					<a href="home.html" class="logo">
+						<img src="img/logob.jpg" alt="iWorder logo">
+					</a>
+				</div>
+
+				<div class="col-md-8 col-sm-8 col-xs-9 login">
+					<ul>
+						<li>
+							<a href="create-post.html">
+								Create Post
+							</a>
+						</li>
+						<li>
+							<a href="search-post.html">
+								My Notes
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html">
+	        		<i class="fas fa-users" style="font-size: 28px;"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
+
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="create">
+	      		<a href="create-post.html">
+	      			 Create post
+	      		</a>
+	      	</li>
+
+	        <li class="create">
+	        	<a href="search-post.html">
+	        		 My Notes
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+	<section id="create-post">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+					<h3 class="">Add new note</h3>
+
+					<form class="create-post" action="" method="">
+						<div class="form-group">
+							<label for="action">Please choose an action</label>
+
+							<div class="radio" style="margin-left: 0px;padding-left: 15px;">
+							  <label>
+							    <input type="radio" name="action"value="option1">
+							    Send a personal note for review &nbsp;&nbsp;&nbsp;&nbsp; <a href="#recipient" role="button" data-toggle="modal" data-target="#recipient" style="color: #555;">(Choose recipient)</a>
+							  </label>
+							</div>
+							<div class="radio" style="margin-left: 0px;padding-left: 15px;">
+							  <label>
+							    <input type="radio" name="action"value="option1">
+							    Save only
+							  </label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="title">Title:</label>
+							<input name="title" id="name" type="text" class="form-control" placeholder="Title">
+						</div>
+
+						<div class="form-group">
+							<label for="short_dec">Decription:</label>
+							<input type="text" id="short_dec" maxlength="75" class="form-control" name="short_dec" placeholder="Add a short description">
+							<p class="help-block">maximum of 75 characters</p>
+						</div>
+
+						<div class="form-group">
+							<label for="body">Content:</label>
+							<textarea name="body" id="body" rows="10" class="form-control"></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="image" class="btn btn-default" style="border-radius: 0px;background-color: #333;border-color: #333;">
+								<i class="fas fa-camera"></i> Add cover image(optional)
+								<input name="image" id="image" onchange="img_upload()" type="file" class="form-cotrol" style="display: none;">
+							</label>
+							<p class="help-block" id="err_image">Picture</p>
+						</div>
+
+						<div class="form-group" style="margin-top: 50px;">
+							<button class="btn btn-default" style="background-color: #333;border-color: #333;">Create</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="recipient" tabindex="-1" role="dialog" aria-labelledby="recipient">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Choose Recepient</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form action="" method="">
+	        	<div class="form-group">
+	        		<input type="text" class="form-control" placeholder="@username or User Name">
+	        	</div>
+
+	        	<ul class="list-group">
+	        		<li class="list-group-item">Jane Iworder <span style="color: #777;">@janyworder</span></li>
+	        		<li class="list-group-item">Abiodun Praise <span style="color: #777;">@abiodun</span></li>
+	        		<li class="list-group-item">Donald Trump <span style="color: #777;">@donald_t</span></li>
+	        	</ul>
+	        
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default" style="border-color: #333;background-color: #333;">Save changes</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

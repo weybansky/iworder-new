@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Conversation | IWORDER</title>
+	<title>Search | IWORDER</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -82,7 +82,7 @@
 					</div>
 					<div class="col-md-3 col-sm-3 col-xs-3">
 						<a href="conversations.html">
-							<img src="svg/envelope-active.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
+							<img src="svg/envelope.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 						</a>
 					</div>
 				</div>
@@ -113,7 +113,7 @@
 		        </li>
 		        <li>
 		        	<a href="conversations.html">
-		        		<img src="svg/envelope-active.svg" alt="">
+		        		<img src="svg/envelope.svg" alt="">
 		        	</a>
 		        </li>
 		      </ul>
@@ -154,71 +154,83 @@
 		</nav>
 		<!-- End of nav -->
 
-	<section id="conversations" style="min-height: calc(100vh - 125px);background-color: #ddd;">
+	<section id="conversations" class="search_page">
 		<div class="container">
-
-				<!-- display this when the user has no conversation -->
-			<!-- <div class="row">
-				<div id="no-conv" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-					<p>You have no conversations.</p>
-					<p style="margin-bottom: 2px;"><a href="search-user.html" style="color: #356b44;font-weight:bold;">Discover</a> new users on the network</p>
-				</div>
-			</div> -->
-
-
 			<div class="row pad">
-				<div class="conv col-md-7 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0" style="background-color: #fff;min-height: calc(100vh - 180px);">
-					<!-- Apply a class of unread to div.message for unread messages -->
-					<div class="message unread">
-						<a href="message.html">
-							<p class="detail">
-								<span class="name">Jane Iworder</span>
-								<span class="time">Today 11:45am</span>
-							</p>
-							<p class="last-msg">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
-							</p>
-						</a>
-					</div>
-					<div class="message unread">
-						<a href="message.html">
-							<p class="detail">
-								<span class="name">Jane Iworder</span>
-								<span class="time">Today 11:45am</span>
-							</p>
-							<p class="last-msg">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
-							</p>
-						</a>
-					</div>
+				<div class="conv col-md-7 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
 
-					<div class="message">
-						<a href="message.html">
-							<p class="detail">
-								<span class="name">Jane Iworder</span>
-								<span class="time">Today 11:45am</span>
-							</p>
-							<p class="last-msg">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
-							</p>
-						</a>
-					</div>
-					<div class="message">
-						<a href="message.html">
-							<p class="detail">
-								<span class="name">Jane Iworder</span>
-								<span class="time">Today 11:45am</span>
-							</p>
-							<p class="last-msg">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat!
-							</p>
-						</a>
-					</div>
-				</div>
+					<form class="navbar-form navbar-left" action="/search" method="GET">
+		        <div class="input-group">
+	            <button type="submit" style="border: 0px none;"><i class="fas fa-search"></i></button>
+	            <input type="text" placeholder="Search..." style="border: 0px none;min-width: ">
+		        </div>
+		        <ul class="nav nav-tabs" role="tablist">
+	            <li role="presentation" class="active"><a href="#posts" aria-controls="posts" role="tab" data-toggle="tab" style="color: #555;">Posts</a></li>
+	            <li role="presentation"><a href="#users" aria-controls="users" role="tab" data-toggle="tab" style="color: #555;">People</a></li>
+	          </ul>
 
-				<!-- <div class="col-md-4 visible-md visible-lg">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quod veritatis, reprehenderit laboriosam consequatur consequuntur nostrum commodi in, iure doloribus non cumque consectetur aliquam architecto, sint dolore quia? Quidem, eligendi!
-				</div> -->
+		      </form>
+		      <div class="clearfix"></div>
+	      	<div class="tab-content">
+      	    <div role="tabpanel" class="tab-pane fade in active" id="posts">
+
+      	    	<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+      	    		<div class="details col-md-8">
+      	    			<p class="no-result">No posts found</p>
+      	    		</div>
+      	    	</div>
+
+
+      	    	<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0" style="margin-bottom: 7px;">
+      	    		<div class="details col-md-8 col-sm-8 col-xs-7" style="padding: 0px 5px;">
+      	    			<h3 style="margin: 0px;margin-bottom: 3px;font-size: 18px;">
+      	    				<a href="article.html" style="font-weight: bold;color: #333;">A Door Ajar</a>
+      	    			</h3>
+      	    			<p class="excerpt" style="font-size: 13px;margin-bottom: 2px;">
+      	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam ar
+      	    			</p>
+      	    			<p class="detail">
+      	    				<a href="profile.html" class="author" style="font-size: 12px;color: #666;">Jane Iworder</a>
+      	    				<span class="fas fa-circle" style="font-size: 4px;vertical-align: middle;"></i></span>
+      	    				<a href="category.html" class="cat" style="font-size: 12px;color: #666;">Poetry</a>
+      	    			</p>
+      	    		</div>
+      	    		<div class="image col-md-4 col-sm-4 col-xs-5" style="padding: 0px 5px;">
+      	    			<a href="article.html">
+      	    				<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+      	    			</a>
+      	    		</div>
+      	    	</div>
+
+      	    </div>
+
+      	    <div role="tabpanel" class="tab-pane fade" id="users">
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<p class="no-result">No users found</p>
+      	    	</div>
+
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+      	    			<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+      	    		</div>
+      	    		<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+      	    			<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+      	    			<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+      	    			<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+      	    		</div>
+      	    		<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+      	    			<button class="btn btn-discover btn-sm" type="button" style="background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;">
+      	    				<i class="fas fa-plus"></i> Follow
+      	    			</button>
+      	    		</div>
+      	    	</div>
+      	    </div>
+
+      	  </div>
+
+				</div><!-- end of conv -->
+
+				
 				<div id="aside" class="col-md-4 visible-md visible-lg">
 					<div style="min-height: 300px;background-color: #fff;width: 90%;">
 						<div class="row recommended" style="margin:0px;padding: 0px;">

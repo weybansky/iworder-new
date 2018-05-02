@@ -1,3 +1,29 @@
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("mobile-nav-main");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky-nav")
+  } else {
+    navbar.classList.remove("sticky-nav");
+  }
+}
+
+
+
+
+// ========
+function bottom_scroll () {
+	// window.scrollTo(0, document.body.scrollHeight);
+}
+
+
 // The next two functions works on the text field in the messaging page
 function msg_box_focusin(){
 	document.getElementById('msg-input').style.backgroundColor = "#fff";
@@ -62,7 +88,23 @@ function password_match () {
 }
 
 
+function img_upload () {
+    var image = document.getElementById('image');
+    var err = document.getElementById('err_image');
+    err.innerHTML = "Please choose an image";
 
+    // console.log(image.files[0]);
+
+    if (image.files[0].size > 2000000) {
+        err.innerHTML = "File size must be less than 2Mb";
+    } else if (image.files[0].type !== "image/png"  && image.files[0].type !== "image/jpg" && image.files[0].type !== "image/jpeg"  && image.files[0].type !== "image/gif") {
+        err.innerHTML = "Invalid/ Unsupported Image Format";
+    } else {
+        err.innerHTML = image.files[0].name;
+        // err.innerHTML += "<br><img src='"+ image.files[0].name +"'>"
+    }
+
+}
 
 
 

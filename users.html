@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Users | IWORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<!-- The top Nav Bar -->
+		<!-- This is the navbar that is displayed when the user is not logged in -->
+		<!-- Check the index2.html file -->
+		<nav class="main-nav visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
+						<a href="home.html" class="logo">
+							<img src="img/logob.jpg" alt="iWorder logo">
+						</a>
+					</div>
+
+					<div class="nav-form col-md-4 col-sm-5 col-xs-6">
+						<form action="" method="">
+							<input type="text" placeholder="Search">
+							<button type="submit"><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="nav-links col-md-4 col-sm-4 col-xs-5">
+						<ul>
+							<li>
+								<a href="profile.html">
+									<img src="svg/coins.svg" alt="Points">
+									304
+								</a>
+							</li>
+							<li>
+								<a href="notification.html">
+									<img src="svg/bell.svg" alt="Notifications">
+									<span class="badge">200</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- The Second Navigation -->
+		<section id="mobile-nav" class="second-nav visible-xs">
+			<div class="container">
+				<div class="row profile">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<a href="profile.html">
+							<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
+							<span>Conversation</span>
+						</a>
+						<a class="create-post" href="create-post.html">
+							<i class="fas fa-pencil-alt"></i>
+						</a>
+					</div>
+				</div>
+
+				<div id="mobile-nav-main" class="row text-center">
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<a href="home.html" class="active">
+							<img src="svg/home.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<a href="hub.html" class="">
+							<i class="fas fa-users fa-2x" style="font-size: 28px;"></i>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<a href="nursery.html">
+							<img src="svg/nursery.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<a href="conversations.html">
+							<img src="svg/envelope.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Desktop Navigation -->
+		<!-- The main Navigation for the desktop -->
+		<!-- This is the on only Nav that showas n desktops -->
+		<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+		  <div class="container">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav icon-link">
+		        <li>
+		        	<a href="home.html" class="active">
+		        		<img src="svg/home.svg" alt="" style="">
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="hub.html">
+		        		<i class="fas fa-users" style="font-size: 28px;"></i>
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="nursery.html">
+		        		<img src="svg/nursery.svg" alt="">
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="conversations.html">
+		        		<img src="svg/envelope.svg" alt="">
+		        	</a>
+		        </li>
+		      </ul>
+
+		      <form class="navbar-form navbar-left" action="/search" method="GET">
+		        <div class="input-group">
+	            <input type="text" placeholder="Search...">
+	            <button type="submit"><i class="fas fa-search"></i></button>
+		        </div>
+		      </form>
+
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li class="dropdown">
+		      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		      	  	<img src="img/portrait1.jpg" class="img-circle" alt="Profile Picture">
+		      	  	Jane Iworder<span class="glyphicon glyphicon-menu-down" style="margin-left: 3px;"></span>
+		      	  </a>
+		      	  <ul class="dropdown-menu">
+		      	    <li><a href="profile.html">Profile <i class="fas fa-user pull-right"></i></a></li>
+		      	    <li><a href="search-user.html">Followers <i class="fas fa-users pull-right"></i></a></li>
+		      	    <li><a href="hub.html">Posts <i class="fas fa-newspaper pull-right"></i></a></li>
+		      	  	<li><a href="notification.html">Notifications <i class="fas fa-bell pull-right"></i></a></li>
+		      	  	<li><a href="rainshrine.html">RainShrine <i class="fab fa-hubspot pull-right"></i></a></li>
+		      	  	<li><a href="onyxes.html">Onyxes <img src="svg/coins.svg" alt="" style="width: 15px;margin-top: -5px;" class="img-responsive pull-right"> </a></li>
+		      	    <li role="separator" class="divider"></li>
+		      	    <li><a href="login.html">Log Out <i class="fas fa-sign-out-alt pull-right"></i></a></li>
+		      	  </ul>
+		      	</li>
+
+		        <li class="create">
+		        	<a href="create-post.html">
+		        		 Create Article
+		        	</a>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- End of nav -->
+
+	<section id="conversations" class="search_page">
+		<div class="container">
+			<div class="row pad">
+				<div class="conv col-md-7 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+
+					<form class="navbar-form navbar-left" action="/search" method="GET">
+		        <div class="input-group">
+	            <button type="submit" style="border: 0px none;"><i class="fas fa-search"></i></button>
+	            <input type="text" placeholder="Search..." style="border: 0px none;min-width: ">
+		        </div>
+		        <ul class="nav nav-tabs" role="tablist">
+	            <li role="presentation" class="active"><a href="#followers" aria-controls="followers" role="tab" data-toggle="tab" style="color: #555;">Followers</a></li>
+	            <li role="presentation"><a href="#following" aria-controls="following" role="tab" data-toggle="tab" style="color: #555;">Following</a></li>
+	          </ul>
+
+		      </form>
+		      <div class="clearfix"></div>
+	      	<div class="tab-content">
+      	    <div role="tabpanel" class="tab-pane fade in active" id="followers">
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<p class="no-result">You have no follower</p>
+      	    	</div>
+
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+      	    			<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+      	    		</div>
+      	    		<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+      	    			<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+      	    			<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+      	    			<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+      	    		</div>
+      	    		<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+      	    			<button class="btn btn-discover btn-sm" type="button" style="background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;border-width: 0px;">
+      	    				<i class="fas fa-plus"></i> Follow
+      	    			</button>
+      	    		</div>
+      	    	</div>
+      	    </div>
+
+      	    <div role="tabpanel" class="tab-pane fade" id="following">
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<p class="no-result">Discover and follow awesome people</p>
+      	    	</div>
+
+      	    	<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+      	    		<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+      	    			<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+      	    		</div>
+      	    		<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+      	    			<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+      	    			<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+      	    			<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+      	    		</div>
+      	    		<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+      	    			<button class="btn btn-discover btn-sm" type="button" style="background-color:#356B44;border-color: #356B44;color: #fff;border-radius: 20px;">
+      	    				<i class="fas fa-check"></i> Following
+      	    			</button>
+      	    		</div>
+      	    	</div>
+      	    </div>
+
+      	  </div>
+
+				</div><!-- end of conv -->
+
+
+
+
+				
+				<div id="aside" class="col-md-4 visible-md visible-lg">
+					<div style="min-height: 300px;background-color: #fff;width: 90%;">
+						<div class="row recommended" style="margin:0px;padding: 0px;">
+							<h3 class="title">Discover</h3>
+
+							<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+								<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+									<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+								</div>
+								<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+									<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+									<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+									<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+								</div>
+								<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+									<button class="btn btn-discover btn-sm" type="button" style="background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;">
+										<i class="fas fa-plus"></i> Follow
+									</button>
+								</div>
+							</div>
+
+							<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+								<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+									<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+								</div>
+								<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+									<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+									<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+									<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+								</div>
+								<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+									<button class="btn btn-discover btn-sm" type="button" style="background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;">
+										<i class="fas fa-plus"></i> Follow
+									</button>
+								</div>
+							</div>
+
+							<div class="discover" style="padding: 15px 0px;border-bottom: 2px solid #ddd;">
+								<div class="image" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;">
+									<a href="profile.html"><img src="img/portrait1.jpg" style="width: 45px; height: 45px;border-radius: 50%;" alt="" class="img-responsive img-circle"></a>
+								</div>
+								<div class="name" style="display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;">
+									<p style="margin:0px;font-weight: bold"><a href="profile.html" style="color: #333;">Jane Iworder</a></p>
+									<p style="margin:0px;font-size: 12px;color: #777;" class="">@janyworder</p>
+									<p style="margin:0px;font-size: 10px;color: #777;" class="">215 Followers</p>
+								</div>
+								<div class="follow" style="display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;">
+									<button class="btn btn-discover btn-sm" type="button" style="background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;">
+										<i class="fas fa-plus"></i> Follow
+									</button>
+								</div>
+							</div>
+					
+
+						</div><!-- End of Recommended -->
+
+						<p class="" style="border-top: 2px solid #ddd;font-size: 14px;padding: 15px">
+							<a href="search-user.html" style="color:#777;text-decoration: underline;">Show more</a>
+						</p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+	<footer id="main">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<p class="user visible-sm visible-md visible-lg">
+						<a href="home.html">Home</a> 
+						<i class="fas fa-circle"></i>
+						<a href="#">About</a>
+						<i class="fas fa-circle"></i>
+						<a href="search-post.html">Categories</a> 
+						<i class="fas fa-circle"></i>
+						<a href="team.html">Team</a> 
+						<i class="fas fa-circle"></i>
+						<a href="support.html">Support</a> 
+						<i class="fas fa-circle"></i>
+						<a href="faq.html">FAQs</a>
+						<i class="fas fa-circle"></i>
+						<a href="facilitator.html">Facilitators</a>
+						<i class="fas fa-circle"></i>
+						<a href="t_and_c.html">Terms and Conditions</a>
+						<i class="fas fa-circle"></i>
+						<a href="profile.html">Jane Iworder</a>
+						<i class="fas fa-circle"></i>
+						<a href="login.html">Logout</a>
+					</p>
+					<p class="user visible-xs text-left">
+						<div class="col-xs-6 visible-xs text-left">
+							<a href="home.html">Home</a> 
+							<br>
+							<a href="#">About</a>
+							<br>
+							<a href="search-post.html">Categories</a> 
+							<br>
+							<a href="team.html">Team</a> 
+							<br>
+							<a href="support.html">Support</a> 
+						</div>
+						<div class="col-xs-6 visible-xs text-left	">
+							<a href="faq.html">FAQs</a>
+							<br>
+							<a href="facilitator.html">Facilitators</a>
+							<br>
+							<a href="t_and_c.html">Terms and Conditions</a>
+							<br>
+							<a href="profile.html">Jane Iworder</a>
+							<br>
+							<a href="login.html">Logout</a>
+						</div>
+					</p>
+					<div class="clearfix"></div>
+					<p class="copyright">
+						<a href="home.html">
+							<i class="far fa-copyright"></i> iWorder</a> 2018						
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

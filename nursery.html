@@ -4,14 +4,16 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nursery | IWORDER</title>
+	<title>Kraal | IWORDER</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<!-- The top Nav Bar -->
-	<nav class="main-nav">
+	<!-- This is the navbar that is displayed when the user is not logged in -->
+	<!-- Check the index2.html file -->
+	<nav class="main-nav visible-xs">
 		<div class="container">
 			<div class="row">
 				<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
@@ -48,13 +50,13 @@
 	</nav>
 
 	<!-- The Second Navigation -->
-	<section class="second-nav">
+	<section id="mobile-nav" class="second-nav visible-xs">
 		<div class="container">
 			<div class="row profile">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<a href="profile.html">
 						<img src="img/portrait1.jpg" class="img-responsive img-circle" alt="Profile Picture">
-						<span>Jane Iworder</span>
+						<span>Kraal</span>
 					</a>
 					<a class="create-post" href="create-post.html">
 						<i class="fas fa-pencil-alt"></i>
@@ -62,15 +64,15 @@
 				</div>
 			</div>
 
-			<div class="row text-center">
+			<div id="mobile-nav-main" class="row text-center">
 				<div class="col-md-3 col-sm-3 col-xs-3">
 					<a href="home.html" class="active">
 						<img src="svg/home.svg" style="display: inline;margin: 0px;width: 25px;height: 25px;" alt="">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="hub.html">
-						<i class="fab fa-hubspot fa-2x"></i>
+					<a href="hub.html" class="">
+						<i class="fas fa-users fa-2x" style="font-size: 28px;"></i>
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3">
@@ -87,140 +89,299 @@
 		</div>
 	</section>
 
-	<section id="nursery">
-		<div class="container-fluid">
-			<div class="row"">
-				<!-- Beginnig of the loop -->
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam architecto vel aspernatur velit,
-						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
-					</div>
-				</div>
-				
+	<!-- Desktop Navigation -->
+	<!-- The main Navigation for the desktop -->
+	<!-- This is the on only Nav that showas n desktops -->
+	<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html">
+	        		<i class="fas fa-users" style="font-size: 28px;"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery-active.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
 
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consecteur sit.
-						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
+	      <form class="navbar-form navbar-left" action="/search" method="GET">
+	        <div class="input-group">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+	        </div>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="dropdown">
+	      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	      	  	<img src="img/portrait1.jpg" class="img-circle" alt="Profile Picture">
+	      	  	Jane Iworder<span class="glyphicon glyphicon-menu-down" style="margin-left: 3px;"></span>
+	      	  </a>
+	      	  <ul class="dropdown-menu">
+	      	    <li><a href="profile.html">Profile <i class="fas fa-user pull-right"></i></a></li>
+	      	    <li><a href="search-user.html">Followers <i class="fas fa-users pull-right"></i></a></li>
+	      	    <li><a href="hub.html">Posts <i class="fas fa-newspaper pull-right"></i></a></li>
+	      	  	<li><a href="notification.html">Notifications <i class="fas fa-bell pull-right"></i></a></li>
+	      	  	<li><a href="rainshrine.html">RainShrine <i class="fab fa-hubspot pull-right"></i></a></li>
+	      	  	<li><a href="onyxes.html">Onyxes <img src="svg/coins.svg" alt="" style="width: 15px;margin-top: -5px;" class="img-responsive pull-right"> </a></li>
+	      	    <li role="separator" class="divider"></li>
+	      	    <li><a href="login.html">Log Out <i class="fas fa-sign-out-alt pull-right"></i></a></li>
+	      	  </ul>
+	      	</li>
+
+	        <li class="create">
+	        	<a href="create-post.html">
+	        		 Create Article
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- End of nav -->
+
+	<section id="nursery" style="background-color: #eee;padding-bottom: 20px;">
+		<div class="container-fluid">
+			<div class="row pad">
+
+				<div class="col-md-6 col-md-offset-1">
+					<div class="row" style="">
+						<h3 class="title visible-md visible-lg">Kraal</h3>
+						<!-- Beginnig of the loop -->
+						<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+							<div class="details">
+								<h3>
+									<a href="article.html">A Door Ajar</a>
+								</h3>
+								<p class="excerpt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam architecto vel aspernatur velit,
+								</p>
+								<p class="detail">
+									<a href="profile.html" class="author">Jane Iworder</a>
+									<span class="fas fa-circle"></i></span>
+									<a href="category.html" class="cat">Poetry</a>
+								</p>
+							</div>
+							<div class="image">
+								<a href="article.html">
+									<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+								</a>
+							</div>
+						</div>
+
+						<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+							<div class="details">
+								<h3>
+									<a href="article.html">A Door Ajar</a>
+								</h3>
+								<p class="excerpt">
+									Lorem ipsum dolor sit amet, consecteur sit.
+								</p>
+								<p class="detail">
+									<a href="profile.html" class="author">Jane Iworder</a>
+									<span class="fas fa-circle"></i></span>
+									<a href="category.html" class="cat">Poetry</a>
+								</p>
+							</div>
+							<div class="image">
+								<a href="article.html">
+									<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+								</a>
+							</div>
+						</div>
+						<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+							<div class="details">
+								<h3>
+									<a href="article.html">A Door Ajar</a>
+								</h3>
+								<p class="excerpt">
+									Lorem ipsum dolor sit amet, consectetur sit.
+								</p>
+								<p class="detail">
+									<a href="profile.html" class="author">Jane Iworder</a>
+									<span class="fas fa-circle"></i></span>
+									<a href="category.html" class="cat">Poetry</a>
+								</p>
+							</div>
+							<div class="image">
+								<a href="article.html">
+									<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+								</a>
+							</div>
+						</div>
+						<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+							<div class="details">
+								<h3>
+									<a href="article.html">A Door Ajar</a>
+								</h3>
+								<p class="excerpt">
+									Lorem ipsum dolor sit amet, consectetur sit.
+								</p>
+								<p class="detail">
+									<a href="profile.html" class="author">Jane Iworder</a>
+									<span class="fas fa-circle"></i></span>
+									<a href="category.html" class="cat">Poetry</a>
+								</p>
+							</div>
+							<div class="image">
+								<a href="article.html">
+									<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+								</a>
+							</div>
+						</div>
+						<div class="post col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+							<div class="details">
+								<h3>
+									<a href="article.html">A Door Ajar</a>
+								</h3>
+								<p class="excerpt">
+									Lorem ipsum dolor sit amet, consectetur sit.
+								</p>
+								<p class="detail">
+									<a href="profile.html" class="author">Jane Iworder</a>
+									<span class="fas fa-circle"></i></span>
+									<a href="category.html" class="cat">Poetry</a>
+								</p>
+							</div>
+							<div class="image">
+								<a href="article.html">
+									<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+								</a>
+							</div>
+						</div>
+
 					</div>
 				</div>
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consectetur sit.
+
+				<div id="aside" class="col-md-4 visible-md visible-lg">
+					<div style="min-height: 300px;background-color: #fff;width: 90%;">
+						<div class="row recommended" style="margin:0px;padding: 0px;">
+							<h3 class="title">Recommended</h3>
+							<div class="post col-md-12 col-sm-12">
+								<div class="image" style="display: block;position: relative;min-height: 200px;width: 100%;">
+									<a href="article.html">
+										<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
+									</a>
+									<div class="date text-center" style="position: absolute;top: 10px;right: 10px;background-color: #ffffff7a;color: #333;border-radius: 50%;padding: 6px 10px;font-size: 12px;">
+										<p style="margin:0px;">
+											<span>27</span>
+											<br> 
+											<span>MAR</span>
+										</p>
+									</div>
+									<div class="category" style="position: absolute;bottom: 0px;left: 0px;background-color: #fff;color: #333;padding: 3px 15px 1px 15px;">
+										<p style="margin:0px;">
+											<a href="category-tag.html" style="font-weight: bold;color: #333;">POETRY</a>
+										</p>
+									</div>
+								</div>
+								<div class="detail" style="display: block;padding-top: 10px;font-size: 12px;color: #777;">
+									<p class="title">
+										<a href="article.html" style="color:#333;font-size: 20px;">A Door Ajar</a>
+									</p>
+									<p class="facilitator-comment" style="margin-bottom: 10px;font-size: 14px;">
+										the city that never sleeps
+									</p>
+									<p class="stats">
+										<span class="author" style="margin-right: 20px;">
+											Jane Iworder
+										</span>
+										<span class="comments">
+											<i class="fas fa-comments"></i>39 comments
+										</span>
+									</p>
+								</div>
+							</div>
+
+
+						</div><!-- End of Recommended -->
+
+						<p class="" style="border-top: 2px solid #ddd;font-size: 14px;padding: 15px">
+							<a href="category-tag.html" style="color:#777;text-decoration: underline;">Show more</a>
 						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
-					</div>
-				</div>
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consectetur sit.
-						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
-					</div>
-				</div>
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consectetur sit.
-						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
-					</div>
-				</div>
-				<div class="post col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0"">
-					<div class="details">
-						<h3>
-							<a href="article.html">A Door Ajar</a>
-						</h3>
-						<p class="excerpt">
-							Lorem ipsum dolor sit amet, consectetur sit.
-						</p>
-						<p class="detail">
-							<a href="profile.html" class="author">Jane Iworder</a>
-							<span class="fas fa-circle"></i></span>
-							<a href="category.html" class="cat">Poetry</a>
-						</p>
-					</div>
-					<div class="image">
-						<a href="article.html">
-							<img class="img-responsive" src="img/article-img.jpg" alt="Post image">
-						</a>
 					</div>
 				</div>
 
 			</div>
-
 		</div>
 	</section>
+
+	<footer id="main">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<p class="user visible-sm visible-md visible-lg">
+						<a href="home.html">Home</a> 
+						<i class="fas fa-circle"></i>
+						<a href="#">About</a>
+						<i class="fas fa-circle"></i>
+						<a href="search-post.html">Categories</a> 
+						<i class="fas fa-circle"></i>
+						<a href="team.html">Team</a> 
+						<i class="fas fa-circle"></i>
+						<a href="support.html">Support</a> 
+						<i class="fas fa-circle"></i>
+						<a href="faq.html">FAQs</a>
+						<i class="fas fa-circle"></i>
+						<a href="facilitator.html">Facilitators</a>
+						<i class="fas fa-circle"></i>
+						<a href="t_and_c.html">Terms and Conditions</a>
+						<i class="fas fa-circle"></i>
+						<a href="profile.html">Jane Iworder</a>
+						<i class="fas fa-circle"></i>
+						<a href="login.html">Logout</a>
+					</p>
+					<p class="user visible-xs text-left">
+						<div class="col-xs-6 visible-xs text-left">
+							<a href="home.html">Home</a> 
+							<br>
+							<a href="#">About</a>
+							<br>
+							<a href="search-post.html">Categories</a> 
+							<br>
+							<a href="team.html">Team</a> 
+							<br>
+							<a href="support.html">Support</a> 
+						</div>
+						<div class="col-xs-6 visible-xs text-left	">
+							<a href="faq.html">FAQs</a>
+							<br>
+							<a href="facilitator.html">Facilitators</a>
+							<br>
+							<a href="t_and_c.html">Terms and Conditions</a>
+							<br>
+							<a href="profile.html">Jane Iworder</a>
+							<br>
+							<a href="login.html">Logout</a>
+						</div>
+					</p>
+					<div class="clearfix"></div>
+					<p class="copyright">
+						<a href="home.html">
+							<i class="far fa-copyright"></i> iWorder</a> 2018						
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
