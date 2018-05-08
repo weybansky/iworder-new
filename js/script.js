@@ -16,14 +16,6 @@ function myFunction() {
 }
 
 
-
-
-// ========
-function bottom_scroll () {
-	// window.scrollTo(0, document.body.scrollHeight);
-}
-
-
 // The next two functions works on the text field in the messaging page
 function msg_box_focusin(){
 	document.getElementById('msg-input').style.backgroundColor = "#fff";

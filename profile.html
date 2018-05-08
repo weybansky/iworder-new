@@ -11,12 +11,77 @@
 </head>
 <body>
 
-	<section id="profilePage">
+	<!-- Desktop Navigation -->
+	<!-- The main Navigation for the desktop -->
+	<!-- This is the on only Nav that showas n desktops -->
+	<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home-active.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html">
+	        		<i class="fas fa-users" style="font-size: 28px;"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
+
+	      <form class="navbar-form navbar-left" action="/search" method="GET">
+	        <div class="input-group">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+	        </div>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="dropdown">
+	      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	      	  	<img src="img/portrait1.jpg" class="img-circle" alt="Profile Picture">
+	      	  	Jane Iworder<span class="glyphicon glyphicon-menu-down" style="margin-left: 3px;"></span>
+	      	  </a>
+	      	  <ul class="dropdown-menu">
+	      	    <li><a href="profile.html">Profile <i class="fas fa-user pull-right"></i></a></li>
+	      	    <li><a href="search-user.html">Followers <i class="fas fa-users pull-right"></i></a></li>
+	      	    <li><a href="hub.html">Posts <i class="fas fa-newspaper pull-right"></i></a></li>
+	      	  	<li><a href="notification.html">Notifications <i class="fas fa-bell pull-right"></i></a></li>
+	      	  	<li><a href="rainshrine.html">RainShrine <i class="fab fa-hubspot pull-right"></i></a></li>
+	      	  	<li><a href="onyxes.html">Onyxes <img src="svg/coins.svg" alt="" style="width: 15px;margin-top: -5px;" class="img-responsive pull-right"> </a></li>
+	      	    <li role="separator" class="divider"></li>
+	      	    <li><a href="login.html">Log Out <i class="fas fa-sign-out-alt pull-right"></i></a></li>
+	      	  </ul>
+	      	</li>
+
+	        <li class="create">
+	        	<a href="create-post.html">
+	        		 Create Article
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- End of nav -->
+
+	<section id="profilePage" style="background-color: #E8F3EC;">
 		<div class="container">
 			<div class="row">
-				<div class="divrow col-xs-12 col-xs-offset-0">
+				<div class="divrow col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
 					
-					<div class="top"">
+					<div class="top visible-xs">
 						<p style="float: left;margin: 0px;">
 							<a href="home.html">
 								<i class="fas fa-home"></i>
@@ -31,12 +96,9 @@
 							</a>
 						</p>
 					</div>
-
 					<div class="img">
 						<img src="img/portrait1.jpg" alt="Profile Picture">
 					</div>
-
-
 					<div class="user_profile">
 						<div class="icon">
 							<a href="conversations.html">
@@ -85,7 +147,6 @@
 							</span>
 						</p>
 					</div>
-
 					<div class="follow"">
 						<a role="button" class="edit" href="#" id="edit_profile_btn" onclick="edit_profile_btn()">
 							<i class="fas fa-pencil-alt" style="margin-right: 10px;"></i> EDIT PROFILE
@@ -94,9 +155,8 @@
 							Cancel
 						</a>
 					</div>
-					
-					<!-- Important section Edit your profile or not -->
 
+					<!-- Important section Edit your profile or not -->
 					<div id="no_edit" class="about">
 						<!--  -->
 						<div class="panel-heading">
@@ -180,14 +240,10 @@
 					</div>
 
 
-
-
-
-
-					<div id="edit_profile_view" class="edit">	
+					<div id="edit_profile_view" class="edit">
 							<!--  -->
 						<form action="" method="POST">
-							<div class="col-md-6 col-md-offset-3">
+							<div class="col-md-12 col-md-offset-0">
 								
 								<div id="profile" class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12" style="padding: 20px 15px;">
@@ -214,8 +270,8 @@
 										</div>
 
 										<div class="form-group">
-											<label for="short-bio">Short Description</label>
-											<input type="text" name="short-bio" class="form-control" placeholder="(Write a short description about yourself)" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores inventore omnis nulla, officia ducimus!">
+											<label for="short-bio">Osumare</label>
+											<input type="text" name="short-bio" class="form-control" placeholder="Up to it? Describe about yourself in exactly 7words" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores inventore omnis nulla, officia ducimus!">
 										</div>
 									</div>
 								</div>
@@ -298,6 +354,7 @@
 						</form>
 
 					</div><!-- End of Edit profile page -->
+
 
 				</div><!-- End of Divrow -->
 			</div><!-- End of row -->
