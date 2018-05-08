@@ -1577,6 +1577,9 @@ section#conversations div.row div.message.unread a p.last-msg{
 
 
 /*===MESSAGE PAGE CONTENT===*/
+section#message{
+	position: relative;
+}
 section#message div.container{
 	padding: 0px;
 	margin: 0px;
@@ -1703,24 +1706,24 @@ section#message div.msg-box{
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	z-index: 3; 
+	z-index: 3;
 }
 
 section#message div.msg-box div{
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
 	width: 100%;
 }
 
 section#message div.msg-box form{
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
 	width: 100%;
 }
 
 section#message div.msg-box form input{
 	height: 35px;
-	width: 88%;
+	width: 87%;
 	padding-left: 10px;
 	padding-right: 10px;
 	border: 1px solid #999;
@@ -1736,7 +1739,7 @@ section#message div.msg-box form input{
 
 section#message div.msg-box form button{
 	height: 35px;
-	width: 12%;
+	width: 11%;
 	border: 1px solid #999;
 	outline: 0;
 	border-top-left-radius: 0px;
@@ -1745,7 +1748,6 @@ section#message div.msg-box form button{
 	border-bottom-right-radius: 20px;
 	border-left: 0px;
 	margin-left: -2px;
-	/*background-color: #356B44;*/
 	background-color: #ccc;
 }
 
