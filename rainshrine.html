@@ -4,41 +4,48 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nursery | IWORDER</title>
+	<title>Create new Article | IWORDER</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- TinyMCE -->
+	<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+	<!-- <script>tinymce.init({ selector:'textarea' });</script> -->
+	<script>
+		tinymce.init({
+			selector:'textarea',
+			branding: false,
+			height: 150,
+			plugins: "wordcount",
+			// statusbar: false,
+			menubar: false
+		});
+	</script>
+
 </head>
 <body>
 	<!-- The top Nav Bar -->
-	<nav class="main-nav">
+	<nav class="main-nav visible-xs visible-sm" style="box-shadow: 0px 0px 10px #ccc;">
 		<div class="container">
 			<div class="row">
-				<div class="nav-logo col-md-4 col-sm-3 col-xs-1"">
+				<div class="col-md-4 col-sm-4 col-xs-3"">
 					<a href="home.html" class="logo">
-						<img src="img/logob.jpg" alt="iWorder logo">
+						<!-- <img src="img/logob.jpg" alt="iWorder logo"> -->
+						<i class="fab fa-hubspot" style="color: #333;font-size: 20px;">My Rainshrine</i>
 					</a>
 				</div>
 
-				<div class="nav-form col-md-4 col-sm-5 col-xs-6">
-					<form action="" method="">
-						<input type="text" placeholder="Search">
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</div>
-
-				<div class="nav-links col-md-4 col-sm-4 col-xs-5">
+				<div class="col-md-8 col-sm-8 col-xs-9 login">
 					<ul>
-						<li>
-							<a href="profile.html">
-								<img src="svg/coins.svg" alt="Points">
-								304
+						<li role="presentation">
+							<a href="#proteged" aria-controls="proteged" role="tab" data-toggle="tab" style="color: ;">
+								<i class="fas fa-user"></i> 24
 							</a>
 						</li>
 						<li>
-							<a href="notification.html">
-								<img src="svg/bell.svg" alt="Notifications">
-								<span class="badge">200</span>
+							<a href="add_note.html">
+							 <i class="fa fa-plus" style="border-radius: 50%;border: 2px solid #333;padding: 2px"></i>	Add Note
 							</a>
 						</li>
 					</ul>
@@ -47,76 +54,175 @@
 		</div>
 	</nav>
 
-	<section id="rainshrine">
-		<div class="container-fluid">
-			<div class="row"">
-				
+	<nav class="navbar navbar-default visible-sm visible-md visible-lg navbar-fixed-top">
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav icon-link">
+	        <li>
+	        	<a href="home.html" class="active">
+	        		<img src="svg/home.svg" alt="" style="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="hub.html">
+	        		<i class="fas fa-users" style="font-size: 28px;"></i>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="nursery.html">
+	        		<img src="svg/nursery.svg" alt="">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="conversations.html">
+	        		<img src="svg/envelope.svg" alt="">
+	        	</a>
+	        </li>
+	      </ul>
 
-				<div>
-				  <!-- Nav tabs -->
-				  <ul class="nav nav-tabs" role="tablist">
-				    <li role="presentation" class="active"><a href="#feed" aria-controls="feed" role="tab" data-toggle="tab">Feed</a></li>
-				    <li role="presentation"><a href="#proteged" aria-controls="proteged" role="tab" data-toggle="tab">Proteges</a></li>
-				    <li role="presentation"><a href="#brodcast" aria-controls="brodcast" role="tab" data-toggle="tab">Broadcast</a></li>
-				  </ul>
-
-				  <!-- Tab panes -->
-				  <div class="tab-content">
-				    <div role="tabpanel" class="tab-pane active" id="feed">
-				    	Feed
-
-				    	<a href="profile-others.html">Gbenga Adeshina</a> posted a Door Ajar. See their post.
-
-							<a href="profile-others.html">Akanni</a> wrote a new poem. See their post
-
-							<a href="profile-others.html">SharonWrites</a> was recommended.
-
-							<a href="profile-others.html">Jane</a> is writing a series. See their post.
-
-							<a href="profile-others.html">Akanni</a> posted a short story. See their post
-				    </div>
-				    <div role="tabpanel" class="tab-pane" id="proteged">
-				    	Proteges
-
-				    	You have 22 proteges.
-
-				    	<div class="users">
-				    		
-				    	</div>
-
-				    </div>
-				    <div role="tabpanel" class="tab-pane" id="brodcast">
-				    	Broadcast
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="create" role="presentation">
+	      		<a href="#proteged" aria-controls="proteged" role="tab" data-toggle="tab" style="color: ;">
+	      			<i class="fas fa-user"></i> 24
+	      		</a>
+	      	</li>
+	      	<li class="create">
+	      		<a href="add_note.html">
+	      			<i class="fa fa-plus" style="border-radius: 50%;border: 2px solid #333;padding: 2px"></i>	Add Note
+	      		</a>
+	      	</li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 
 
-				    	Want to share a story or teach your proteges some pretty interesting stuff?
-							Share a note.(link and bold) 
-							You can make your note public or strictly between your proteges.
+	<section id="create-post">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+					
+					<section id="conversations" class="notiication" style="padding: 0px 8px;background: white;">
+								<div>
+								  <!-- Nav tabs -->
+								  <ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class="active"><a href="#feed" aria-controls="feed" role="tab" data-toggle="tab" style="color: #333;">Feed</a></li>
+								    <li role="presentation"><a href="#proteged" aria-controls="proteged" role="tab" data-toggle="tab" style="color: #333;">Proteges</a></li>
+								    <li role="presentation"><a href="#brodcast" aria-controls="brodcast" role="tab" data-toggle="tab" style="color: #333;">Broadcast</a></li>
+								  </ul>
+								  <!-- Tab panes -->
+								  <div class="tab-content">
+								    <div role="tabpanel" class="tab-pane fade in active" id="feed">
+								    	<div class="message unread">
+								    		<a href="">
+								    			<p class="detail">
+								    				<span class="time">Today 11:45am</span>
+								    			</p>
+								    			<p class="last-msg">
+								    				<i class="fas fa-envelope"></i>
+								    				<span>You have a <a href="message.html" style="font-weight: bold;"> new message</a></span>
+								    			</p>
+								    		</a>
+								    	</div>
 
-							Previous notes.(link and header)
+								    	<div class="message unread">
+								    		<a href="">
+								    			<p class="detail">
+								    				<!-- <span class="name">Jane Iworder</span> -->
+								    				<span class="time">Today 11:45am</span>
+								    			</p>
+								    			<p class="last-msg">
+								    				<img src="img/portrait1.jpg" alt="">
+								    				<span><a href="profile.html" style="font-weight: bold;">Goodluck Jonathan </a> is following you</span>
+								    			</p>
+								    		</a>
+								    	</div>
 
-							(Followed by Kraal-like posts format)
+								    	<div class="message">
+								    		<a href="">
+								    			<p class="detail">
+								    				<!-- <span class="name">Jane Iworder</span> -->
+								    				<span class="time">Today 11:45am</span>
+								    			</p>
+								    			<p class="last-msg">
+								    				<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas ut magni, rem non fugiat! -->
+								    				<i class="fas fa-newspaper"></i>
+								    				<span style="">You have a <a href="message.html" style="font-weight: bold;"> new review request</a></span>
+								    			</p>
+								    		</a>
+								    	</div>
+								    </div>
 
-							<form action="" method="">
-								<div class="form-group">
-									<textarea name="broadcast" id="broadcast" cols="30" rows="10"></textarea>
+								    <div role="tabpanel" class="tab-pane fade" id="proteged">
+								    	Proteges
+								    	You have 22 proteges.
+								    	<div class="users">
+
+								    	</div>
+								    </div>
+
+								    <div role="tabpanel" class="tab-pane fade" id="brodcast">
+								    	<p style="margin-bottom: 15px;margin-top: 5px;">Want to share a story or teach your proteges some pretty interesting stuff? <a href="add_note" style="font-weight: bold;color: #333;">Share a note</a></p>
+											<p style="margin-bottom: 15px;margin-top: 5px;">You can make your note public or strictly between your proteges.</p>
+											
+											<h4 style="font-weight: bold;margin-bottom: 20px;">Previous notes<h4>
+
+											<div class="note">
+												<div class="details">
+													<h3>
+														<a href="article.html" style="color: #333;font-size: 16px;font-weight: bold">A Door Ajar</a>
+													</h3>
+													<p class="excerpt" style="font-size: 14px;color: #555;">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam architecto vel aspernatur velit,
+													</p>
+													<p class="stats" style="font-size: 12px;color: #777;">
+														<span class="time">
+															<i class="far fa-clock" style="margin-right: 4px;"></i>6 min ago
+														</span>
+														<span class="seperator" style="margin: 0px 5px;">
+															<i class="fas fa-circle" style="font-size: 4px;vertical-align: middle;"></i>
+														</span>
+														<span class="comments">
+															<i class="fas fa-comments" style="margin-right: 4px;"></i>39 comments
+														</span>
+													</p>
+												</div>
+											</div>
+											<div class="note">
+												<div class="details">
+													<h3>
+														<a href="article.html" style="color: #333;font-size: 16px;font-weight: bold">A Door Ajar</a>
+													</h3>
+													<p class="excerpt" style="font-size: 14px;color: #555;">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quam architecto vel aspernatur velit,
+													</p>
+													<p class="stats" style="font-size: 12px;color: #777;">
+														<span class="time">
+															<i class="far fa-clock" style="margin-right: 4px;"></i>6 min ago
+														</span>
+														<span class="seperator" style="margin: 0px 5px;">
+															<i class="fas fa-circle" style="font-size: 4px;vertical-align: middle;"></i>
+														</span>
+														<span class="comments">
+															<i class="fas fa-comments" style="margin-right: 4px;"></i>39 comments
+														</span>
+													</p>
+												</div>
+											</div>
+
+											
+								    </div>
+								  </div>
 								</div>
-								<div class="form-group">
-									<button type="submit" class="btn btn-default pull-right">Send</button>
-								</div>
-							</form>
-				    </div>
-				  </div>
+					</section>
+
 				</div>
-
-
-
 			</div>
 		</div>
 	</section>
 
-
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
