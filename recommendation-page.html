@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +10,46 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- TinyMCE -->
+	<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+	<script>
+		tinymce.init({
+			selector:'textarea',
+			branding: false,
+			plugins: "wordcount",
+			statusbar: true,
+			toolbar: 'bold italic',
+			menubar: false
+		});
+	</script>
 </head>
 <body>
 
-	<section id="recommendation">
+	<!-- The Article Section -->
+	<section id="article">
+		<!-- Article Fixed Top Nav -->
 		<div class="container article-nav">
 			<div class="row">
 				<div class="col-xs-12 col-xs-offset-0">
 					<a href="hub.html" class="hub-ico">
-						<i class="fab fa-hubspot"></i>
+						<i class="fas fa-users" style="font-size:25px;"></i>
 					</a>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="container">
+		<div class="container article-content">
 			<div class="row">
-				<div class="col-md-8 col-sm-9 col-xs-12 col-xs-offset-0">
-
-					<p class="commentary">
+				<div class="art col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+					<!-- Article Head -->
+					<p class="commentary" style="font-weight: bold;font-size: 16px;">
 						What do you like about this post?
 					</p> 
-						
 					<p>
-						Add a short commentary and recommend. Commentaries would be displayed on the hub page
+						Add a short commentary and recommend. Commentaries would be displayed on the hub.
 					</p>
-
 					<form action="" method="">
 						<div class="form-group">
 							<textarea name="commentary" id="commentary" cols="30" rows="10" class="form-control" placeholder="(Maximum of 70 characters)"></textarea>
@@ -46,22 +61,12 @@
 						    50/70
 						  </div>
 						</div> -->
-
 						<div class="form-group">
-							<button type="submit" class="btn btn-default pull-right">
+							<button type="submit" class="btn btn-worder pull-right">
 								Recommend
 							</button>
 						</div>
 					</form>
-
-					
-				</div>
-
-				<!-- empty space beside article -->
-				<!-- might be used as widget area or for ads -->
-				<div class="col-md-4 col-sm-3 col-xs-12 col-xs-offset-0">
-					<!-- <h4 class=" text-center">Widgets / Ads Section</h4> -->
-				</div><!-- End of the Widgets Section -->
 
 			</div>
 		</div>
@@ -70,5 +75,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
