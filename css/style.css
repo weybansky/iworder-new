@@ -519,7 +519,7 @@ section#article div.container.article-nav{
 	width: 100%;
 	z-index: 3;
 	background-color: #fff;
-	padding: 5px 15px;
+	padding: 10px 15px;
 }
 section#article div.container.article-nav a.hub-ico{
 	float: left;color: #333;
@@ -542,7 +542,8 @@ section#article div.article-head-img{
 }
 
 section#article div.article-head-img img{
-	width: 100%;
+	/*height: 380px;*/
+	width: 85%;
 }
 
 section#article div.article-head-img div.cat{
@@ -560,8 +561,8 @@ section#article div.article-head-img div.cat{
 section#article div.article-head-img div.cat a{
 	color: #333;
 	display: block;
-	padding: 7px 15px;
-	font-size: 13px;
+	padding: 10px 15px;
+	font-size: 16px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -573,7 +574,7 @@ section#article div.article-head-title{
 section#article div.article-head-title p.title{
 	color: #555;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 32px;
 	margin: 0px;
 	padding-bottom: 2px;
 }
@@ -632,6 +633,7 @@ section#article div.article-head-author p.author span.level{
 }
 
 section#article div.article-head-author p.author-action{
+	float: right;
 	display: inline-block;
 	max-width: 34%;
 	margin: 0px;
@@ -672,6 +674,19 @@ div.article-body{
 	font-family: 'Titillium Web', sans-serif;
 	/*font-family: 'Handlee', cursive;*/
 }
+
+div.article-body div.tag{
+	color: #666;font-size: 14px;padding: 20px 3px;
+}
+
+div.article-body p.cat{
+	display: inline-block;float: left;width: 50%;
+}
+
+div.article-body p.text-right{
+	display: inline-block;float: left;width: 50%;
+}
+
 
 /*=============Article Footer============*/
 section.article-footer div.row{
@@ -1378,6 +1393,10 @@ section#recommendation form button{
 
 
 /*=====NURSERY PAGE CONTENT=====*/
+section#nursery{
+	background-color: #eee;padding-bottom: 20px;
+}
+
 section#nursery div.container-fluid{
 	padding: 0px;
 	margin: 0px;
@@ -1463,6 +1482,10 @@ section#nursery div.row div.image{
 
 
 /*===CONVERSATIONS PAGE CONTENT=====*/
+section#conversations{
+	min-height: calc(100vh - 125px);background-color: #ddd;
+}
+
 section#conversations div.container{
 	padding: 0px;
 	margin: 0px;
@@ -1471,6 +1494,10 @@ section#conversations div.container{
 section#conversations div.row{
 	margin: 0px;
 	padding: 0px;
+}
+
+section#conversations div.row .conv{
+	background-color: #fff;min-height: calc(100vh - 180px);
 }
 
 section#conversations div.row h3.title{
@@ -1771,6 +1798,28 @@ section#create-post form.create-post .btn{
 }
 
 
+/*====NOTES====*/
+section#create-post div.note h3 a{
+	color: #333;font-size: 16px;font-weight: bold
+}
+section#create-post div.note p.excerpt{
+	font-size: 14px;color: #555;
+}
+section#create-post div.note p.stats{
+	font-size: 12px;color: #777;
+}
+
+/*POSTS*/
+section#create-post div.note .image{
+	display: inline-block;float: left;width: 30%;
+}
+section#create-post div.note .details{
+	padding-left: 15px;vertical-align: top;display: inline-block;float: left;width: 70%;
+}
+
+
+
+
 /*===Category/Tag Page Content*/
 section#search-page{
 	margin: 0px;
@@ -1986,6 +2035,9 @@ footer#main a.user{
 
 /*For ExtraSmall(xs) or Mobile Devices*/
 @media (max-width: 768px) {
+	section.search_page .conv form .nav-tabs {
+		margin-top: 20px;
+	}
 	section#home-page-content{
 		margin-top: 10px;
 	}
@@ -2102,6 +2154,13 @@ footer#main a.user{
 
 /*For screen above Tablet (Desktop)*/
 @media (min-width: 991px) {
+	div.article-body{
+		padding: 12px 8px;
+		padding-top: 40px;
+		font-size: 16px;
+		letter-spacing: 0.1em;
+		font-family: 'Titillium Web', sans-serif;
+	}
 	body{
 		padding-top: 45px;
 	}
@@ -2167,7 +2226,7 @@ aside#sidebar .cont div.row.recommended{
 }
 
 aside#sidebar .cont div.row.recommended h3.title,
-aside#sidebar .discover h3.title{
+aside#sidebar .discover-posts h3.title{
 	margin: 0px;
   padding: 10px 15px;
   font-size: 15px;
@@ -2214,32 +2273,74 @@ aside#sidebar .cont p.seperator a{
 	color:#777;text-decoration: underline;
 }
 
-aside#sidebar .discover{
+aside#sidebar .discover-posts{
 	border-top: 30px solid #eee;padding-top: 20px;
 }
 
-aside#sidebar .discover .row{
+aside#sidebar .discover-posts .row{
 	padding: 0px;margin: 0px;
 }
 
-aside#sidebar .discover .row .col-md-4{
+aside#sidebar .discover-posts .row .col-md-4{
 	padding: 10px;
 }
 
-aside#sidebar .discover .col-md-8{
+aside#sidebar .discover-posts .col-md-8{
 	padding: 10px; padding-left: 5px;
 }
 
-aside#sidebar .discover .col-md-8 p.title{
+aside#sidebar .discover-posts .col-md-8 p.title{
 	font-size: 16px;font-weight: bold;color:#555;margin-bottom: 3px;
 }
 
-aside#sidebar .discover .col-md-8 p.text{
+aside#sidebar .discover-posts .col-md-8 p.text{
 	font-weight: normal;font-size: 12px;color: #777;margin-bottom: 3px;
 }
 
-aside#sidebar .discover .col-md-8 p.stat{
+aside#sidebar .discover-posts .col-md-8 p.stat{
 	font-size: 12px;font-weight: normal;color:#777;margin-bottom: 0px;
+}
+
+aside#sidebar .discover{
+	padding: 15px 0px;border-bottom: 2px solid #ddd;
+}
+
+aside#sidebar .discover .image{
+	display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;
+}
+
+aside#sidebar .discover .image img{
+	width: 45px; height: 45px;border-radius: 50%;
+}
+
+aside#sidebar .discover .name{
+	display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;
+}
+
+aside#sidebar .discover .name p{
+	margin:0px;font-size: 11px;color: #777;
+}
+
+aside#sidebar .discover .name p.user{
+	margin:0px;font-weight: bold;font-size: 14px;
+}
+
+aside#sidebar .discover .follow{
+	display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;
+}
+
+aside#sidebar .discover .follow .btn{
+	background-color:#fff;
+	color: #356B44;
+	border-radius: 20px;
+	border-color: #356B44;
+}
+
+aside#sidebar .article-cont{
+	border-bottom: 1px solid #ddd;
+	overflow: auto;
+	clear: both;
+	display: table;
 }
 
 
@@ -2249,4 +2350,62 @@ aside#sidebar .discover .col-md-8 p.stat{
 /*Fixes*/
 section#hub div.container{
 	min-height: calc(100vh - 120px);
+}
+
+
+.btn-worder{
+	background-color: #333 !important;
+	/*background-color: #356B44;*/
+	color: #fff !important;
+}
+
+/*Notification*/
+section#conversations.notiication{
+	min-height: calc(100vh - 125px);background-color: #ddd;
+}
+section#conversations.notiication div.message{
+	border-bottom: 1px solid #ddd !important;
+}
+
+section#conversations.notiication div.message p.last-msg i{
+	font-size:30px; display: inline-block; vertical-align: middle;margin-right: 10px;
+}
+section#conversations.notiication div.message p.last-msg span{
+	display: inline-block;font-size: 13px;
+}
+section#conversations.notiication div.message p.last-msg img{
+	width: 40px;height: 40px;border-radius: 50%;display: inline-block;margin-right: 10px;
+}
+
+section#conversations.notiication div.message p.last-msg a{
+	color: #333;
+}
+
+section#conversations.notiication div.message p.detail span.time {
+    float: right;
+    font-size: 12px;
+    color: #777;
+}
+
+div.tab-content#users .user{
+padding: 15px 0px;border-bottom: 2px solid #ddd;
+}
+
+div.tab-content#users .user .image{
+	display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;padding-left: 10px;
+}
+div.tab-content#users .user .image img{
+	width: 45px; height: 45px;border-radius: 50%;
+}
+div.tab-content#users .user .name{
+	display: inline-block;vertical-align: middle;padding-right: 10px;min-width: 50%;
+}
+div.tab-content#users .user .name p{
+margin:0px;font-size: 12px;color: #777;
+}
+div.tab-content#users .user .follow{
+	display: inline-block;vertical-align: middle;padding-right: 10px;width: 20%;
+}
+div.tab-content#users .user .follow button{
+	background-color:#fff;border-color: #356B44;color: #356B44;border-radius: 20px;border-width: 0px;
 }
